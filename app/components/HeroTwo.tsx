@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 
 const HeroTwo = () => {
     return (
-        // <section>
-        //     <div className="relative py-12 bg-gray-900 sm:py-16 lg:py-20 xl:pt-32 xl:pb-44">
         <section>
-  <div className="relative py-16 sm:py-20 lg:py-28 bg-gray-900">
+            <div className="relative py-16 sm:py-20 lg:py-28 bg-gray-900">
 
                 <div className="absolute inset-0 hidden lg:block">
                     <img className="object-cover object-right-bottom w-full h-full" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/hero/1/background.png" alt="" />
@@ -44,32 +42,6 @@ const HeroTwo = () => {
                                 Get Started Today
                             </a>
 
-                            {/* <a
-                                href="#"
-                                title=""
-                                className="
-                            inline-flex
-                            items-center
-                            justify-center
-                            px-2
-                            py-3
-                            text-base
-                            font-bold
-                            leading-7
-                            text-white
-                            transition-all
-                            duration-200
-                            bg-transparent
-                            border border-transparent
-                            rounded-md
-                            sm:px-4
-                            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-gray-700
-                            hover:bg-gray-700
-                        "
-                                role="button"
-                            >
-                                Check live preview
-                            </a> */}
                         </div>
                     </div>
                 </div>
