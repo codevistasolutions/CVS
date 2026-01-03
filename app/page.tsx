@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import HeroContent from './components/HeroContent'
+import HeroContent from './components/HeroCarousel'
 import LogosSection from './components/LogosSection'
 import Features from './components/Features'
 import Working from './components/Working'
@@ -17,7 +17,6 @@ export default function Home() {
     <>
 
       <Navbar />
-      
       <HeroContent />
       <LogosSection />
       <Features />
