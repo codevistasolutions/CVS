@@ -6,9 +6,8 @@ const HeroThree = () => {
             <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
                 <img className="w-auto h-full" src="https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png" alt="" />
             </div>
+            <section className="relative py-12 sm:py-16 lg:py-24 ">
 
-            {/* <section className="relative py-12 sm:py-16 lg:pt-20 lg:pb-36"> */}
-            <section className="relative py-16 sm:py-20 lg:py-28">
 
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5">
@@ -37,36 +36,6 @@ const HeroThree = () => {
                                     Schedule a Free Consultation
                                 </a>
 
-                                {/* <a
-                                    href="#"
-                                    title=""
-                                    className="
-                                inline-flex
-                                items-center
-                                px-4
-                                py-4
-                                mt-4
-                                text-lg
-                                font-bold
-                                transition-all
-                                duration-200
-                                bg-transparent
-                                border border-transparent
-                                sm:mt-0
-                                font-pj
-                                justif-center
-                                rounded-xl
-                                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300
-                                hover:bg-gray-200
-                                focus:bg-gray-200
-                            "
-                                    role="button"
-                                >
-                                    <svg className="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                                    </svg>
-                                    Download iOS App
-                                </a> */}
                             </div>
                         </div>
 

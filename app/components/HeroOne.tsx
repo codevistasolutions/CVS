@@ -3,7 +3,8 @@
 export default function HeroOne() {
     return (
         <div className="bg-gray-50">
-            <section className="relative py-bottom-16 sm:py-bottom-20 lg:py-bottom-28 ">
+            <section className="relative py-10 sm:py-20 lg:py-20">
+
 
                 <div className="absolute bottom-0 right-0 overflow-hidden">
                     <img
