@@ -4,7 +4,8 @@ export default function Features() {
         <>
             {/* Features Section: Modern With Icons */}
             <div className="bg-white" id="features">
-                <div className="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32">
+                {/* <div className="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32"> */}
+                <div className="space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:py-24 xl:py-20">
                     {/* Heading */}
                     <div className="text-center">
 
