@@ -11,6 +11,7 @@ import Email from './components/Email'
 import Team from './components/Team'
 import Services from './components/Services'
 import ProjectDisplay from './components/ProjectDisplay'
+import Steps from './components/Steps'
 
 export default function Home() {
   return (
@@ -21,10 +22,11 @@ export default function Home() {
       <LogosSection />
       <Features />
       <Working />
-      <About />
+      {/* <About /> */}
       <Services />
-      <Team />
-      <ProjectDisplay />
+      {/* <Team /> */}
+      <Steps />
+      {/* <ProjectDisplay /> */}
       <Testimonials />
       <Email />
     
