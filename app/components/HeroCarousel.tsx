@@ -17,7 +17,7 @@ export default function HeroCarousel() {
   }, [heroes.length]);
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div id='#' className="relative w-full overflow-hidden">
       {heroes.map((Hero, index) => (
         <div
           key={index}

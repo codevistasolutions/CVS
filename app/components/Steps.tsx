@@ -1,75 +1,94 @@
-
 import React from 'react';
 
 const Steps = () => {
     return (
         <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div className="grid items-center max-w-5xl grid-cols-1 mx-auto space-y-8 lg:grid-cols-2 sm:space-y-12 lg:space-x-16 xl:space-x-32">
-                    <div className="max-w-xl mx-auto text-center lg:text-left lg:max-w-none">
-                        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Managing & selling digital products never been so easy!</h2>
-                        <p className="mt-8 text-base font-normal text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet pellentesque aliquam enim.</p>
+                <div className="grid items-center max-w-5xl grid-cols-1 mx-auto gap-12 lg:grid-cols-2">
+
+                    {/* Left Content */}
+                    <div className="text-center lg:text-left">
+                        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+                            One Platform for Digital Service Businesses
+                        </h2>
+
+                        <p className="mt-6 text-base text-gray-600 font-pj max-w-lg mx-auto lg:mx-0">
+                            Build, sell, and manage custom software services with recurring revenue —
+                            all from one simple dashboard.
+                        </p>
                     </div>
 
+                    {/* Right Card */}
                     <div className="relative max-w-md mx-auto lg:max-w-none">
                         <div className="absolute -inset-1.5">
-                            <div className="w-full h-full mx-auto opacity-30 blur-lg filter" style={{ background: "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)" }}></div>
+                            <div
+                                className="w-full h-full opacity-30 blur-lg"
+                                style={{
+                                    background:
+                                        "linear-gradient(90deg, #44ff9a, #44b0ff, #8b44ff, #ff6644, #ebff70)",
+                                }}
+                            />
                         </div>
 
-                        <div className="relative overflow-hidden bg-white rounded-2xl">
-                            <div className="p-8 md:p-11">
-                                <div className="space-y-12">
-                                    <div className="flex items-start">
-                                        <div className="inline-flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-gray-900 rounded-full">
-                                            <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                                            </svg>
-                                        </div>
+                        <div className="relative bg-white rounded-2xl">
+                            <div className="p-6 md:p-8">
+                                <div className="space-y-8">
 
-                                        <div className="ml-5">
-                                            <h3 className="text-lg font-bold text-gray-900 font-pj">Registration</h3>
-                                            <p className="mt-3 text-lg font-normal text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                    {/* Step 1 */}
+                                    <div className="flex items-start">
+                                        <div className="flex items-center justify-center w-10 h-10 text-white bg-gray-800 rounded-full flex-shrink-0">
+                                            1
+                                        </div>
+                                        <div className="ml-4">
+                                            <h3 className="text-base font-semibold text-gray-900 font-pj">
+                                                Registration
+                                            </h3>
+                                            <p className="mt-2 text-base text-gray-600 font-pj">
+                                                Create your account, connect payments, and launch instantly.
+                                            </p>
                                         </div>
                                     </div>
 
+                                    {/* Step 2 */}
                                     <div className="flex items-start">
-                                        <div className="inline-flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-gray-900 rounded-full">
-                                            <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-                                            </svg>
+                                        <div className="flex items-center justify-center w-10 h-10 text-white bg-gray-800 rounded-full flex-shrink-0">
+                                            2
                                         </div>
-
-                                        <div className="ml-5">
-                                            <h3 className="text-lg font-bold text-gray-900 font-pj">Add Products</h3>
-                                            <p className="mt-3 text-lg font-normal text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                        <div className="ml-4">
+                                            <h3 className="text-base font-semibold text-gray-900 font-pj">
+                                                Add Products
+                                            </h3>
+                                            <p className="mt-2 text-base text-gray-600 font-pj">
+                                                List services with pricing, demos, portfolios, and booking.
+                                            </p>
                                         </div>
                                     </div>
 
+                                    {/* Step 3 */}
                                     <div className="flex items-start">
-                                        <div className="inline-flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-gray-900 rounded-full">
-                                            <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                                                />
-                                            </svg>
+                                        <div className="flex items-center justify-center w-10 h-10 text-white bg-gray-800 rounded-full flex-shrink-0">
+                                            3
                                         </div>
-
-                                        <div className="ml-5">
-                                            <h3 className="text-lg font-bold text-gray-900 font-pj">Grow Audience</h3>
-                                            <p className="mt-3 text-lg font-normal text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                        <div className="ml-4">
+                                            <h3 className="text-base font-semibold text-gray-900 font-pj">
+                                                Grow Audience
+                                            </h3>
+                                            <p className="mt-2 text-base text-gray-600 font-pj">
+                                                Capture leads, run campaigns, and track performance.
+                                            </p>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
     );
-}
+};
 
 export default Steps;
+

@@ -16,47 +16,37 @@ export default function LogosSection() {
           gradient={false}
         >
           <div className="flex items-center gap-16 mx-8 text-gray-400">
-
-            {/* Logo 1 */}
-            {/* <div className="px-2 h-28 inline-flex items-center justify-center grayscale opacity-75 transition hover:grayscale-0 hover:opacity-100">
-              <div className="inline-flex items-center space-x-2 text-2xl font-semibold">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17z" />
-                </svg>
-                <span>boxspot</span>
-              </div>
-            </div> */}
             <div className="px-2 h-28 inline-flex items-center justify-center grayscale opacity-75 transition hover:grayscale-0 hover:opacity-100">
               <div className="inline-flex items-center space-x-2 text-2xl font-semibold">
                 <img
-                src="/IMG_0079.svg"
-                alt="Logo"
-                className="h-12 w-auto max-h-full object-contain"
-              />
-              <span>Sahil Properties</span>
+                  src="/IMG_0079 2.svg"
+                  alt="Logo"
+                  className="h-12 w-auto max-h-full object-contain"
+                />
+                <span>Sahil Properties</span>
               </div>
-              
+
             </div>
 
             <div className="px-2 h-28 inline-flex items-center justify-center grayscale opacity-75 transition hover:grayscale-0 hover:opacity-100">
-              
+
               <div className="inline-flex items-center space-x-2 text-2xl font-semibold"><img
-                src="/IMG_0080.svg"
+                src="/IMG_0080 4.svg"
                 alt="Logo"
                 className="h-12 w-auto max-h-full object-contain"
               />
-              <span>The Mohan Tigers</span>
+                <span>The Mohan Tigers</span>
               </div>
             </div>
 
             <div className="px-2 h-28 inline-flex items-center justify-center grayscale opacity-75 transition hover:grayscale-0 hover:opacity-100">
               <div className="inline-flex items-center space-x-2 text-2xl font-semibold">
-              <img
-                src="/IMG_0081.svg"
-                alt="Logo"
-                className="h-12 w-auto max-h-full object-contain"
-              />
-              <span>Life Lens Shots</span>
+                <img
+                  src="/IMG_0081.svg"
+                  alt="Logo"
+                  className="h-12 w-auto max-h-full object-contain"
+                />
+                <span>Life Lens Shots</span>
               </div>
             </div>
 
