@@ -23,7 +23,7 @@ export default function LogosSection() {
                   alt="Logo"
                   className="h-12 w-auto max-h-full object-contain"
                 />
-                <span>Sahil Properties</span>
+                <span>Sahil Property</span>
               </div>
 
             </div>
