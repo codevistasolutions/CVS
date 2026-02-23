@@ -69,7 +69,7 @@ export default function LogosSection() {
                   alt="Logo"
                   className="h-12 w-auto max-h-full object-contain"
                 />
-                <span>Sahil Property</span>
+                <span>Krio Gym</span>
               </div>
 
             </div>
