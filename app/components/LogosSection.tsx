@@ -61,18 +61,7 @@ export default function LogosSection() {
               </div>
             </div>
 
-             <div className="flex items-center gap-16 mx-8 text-gray-400">
-            <div className="px-2 h-28 inline-flex items-center justify-center grayscale opacity-75 transition hover:grayscale-0 hover:opacity-100">
-              <div className="inline-flex items-center space-x-2 text-2xl font-semibold">
-                <img
-                  src="/krio.svg"
-                  alt="Logo"
-                  className="h-12 w-auto max-h-full object-contain"
-                />
-                <span>Krio Gym</span>
-              </div>
-
-            </div>
+            
 
 
 
