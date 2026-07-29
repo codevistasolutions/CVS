@@ -7,12 +7,12 @@ export default function Email() {
     <>
       {/* Contact Section: With Image Cover */}
       <div
-        className="bg-cover"
-        style={{
-          backgroundImage:
-            'url("https://cdn.tailkit.com/media/placeholders/photo-wpU4veNGnHg-1280x800.jpg")',
-        }}
-      >
+  id="email"
+  className="bg-cover scroll-mt-28"
+  style={{
+    backgroundImage: 'url("https://cdn.tailkit.com/media/placeholders/photo-wpU4veNGnHg-1280x800.jpg")',
+  }}
+>
         <div className="bg-gray-50/95">
           <div className="container mx-auto px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
             <div className="flex flex-col gap-16 lg:flex-row lg:items-center">
