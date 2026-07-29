@@ -39,8 +39,7 @@ export default function PrivacyPolicyPage() {
               </h2>
 
               <p>
-                CodeVista Solutions (OPC) Pvt. Ltd. ("CodeVista", "we",
-                "our", or "us") respects your privacy and is committed to
+                CodeVista Solutions (OPC) Pvt. Ltd. (reffered to as CodeVista, we, our or us) respects your privacy and is committed to
                 protecting your personal information. This Privacy Policy
                 explains how we collect, use, store and protect information
                 when you visit our website or use our services.
