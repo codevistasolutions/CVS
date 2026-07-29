@@ -6,7 +6,7 @@ export default function TestimonialsPage() {
   return (
     <>
       <Navbar />
-      <Services />
+      <Testimonials />
       <Footer />
     </>
   );
