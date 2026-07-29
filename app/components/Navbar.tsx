@@ -112,11 +112,11 @@ export default function Navbar() {
                     </a>
 
                     <a
-                      href="/about"
+                      href="/services"
                       onClick={closeMenu}
                       className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded hover:bg-gray-100"
                     >
-                      About Us
+                      Our Services
                     </a>
 
                     <a
