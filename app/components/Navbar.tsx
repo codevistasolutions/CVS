@@ -74,13 +74,13 @@ export default function Navbar() {
 
               {/* Desktop Menu */}
               <div className="hidden md:flex md:items-center md:justify-center md:space-x-10 md:absolute md:inset-y-0 md:left-1/2 md:-translate-x-1/2 lg:space-x-16">
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50">
+                <a href="/" className="text-base font-medium text-gray-900 hover:text-opacity-50">
                   Home
                 </a>
-                <a href="#services" className="text-base font-medium text-gray-900 hover:text-opacity-50">
+                <a href="/services" className="text-base font-medium text-gray-900 hover:text-opacity-50">
                   Services                </a>
                 <a
-                  href="#testimonials"
+                  href="/testimonials"
                   className="text-base font-medium text-gray-900 hover:text-opacity-50"
                 >
                   Testimonials
@@ -90,7 +90,7 @@ export default function Navbar() {
               {/* Desktop CTA */}
               <div className="hidden md:flex">
                 <a
-                  href="#email"
+                  href="/email"
                   className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gray-900 rounded hover:bg-gray-700"
                 >
                   Contact Us
@@ -104,7 +104,7 @@ export default function Navbar() {
                 <div className="px-1 py-6">
                   <div className="grid gap-y-6">
                     <a
-                      href="#"
+                      href="/"
                       onClick={closeMenu}
                       className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded hover:bg-gray-100"
                     >
@@ -112,7 +112,7 @@ export default function Navbar() {
                     </a>
 
                     <a
-                      href="#about"
+                      href="/about"
                       onClick={closeMenu}
                       className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded hover:bg-gray-100"
                     >
@@ -120,7 +120,7 @@ export default function Navbar() {
                     </a>
 
                     <a
-                      href="#testimonials"
+                      href="/testimonials"
                       onClick={closeMenu}
                       className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded hover:bg-gray-100"
                     >
@@ -128,7 +128,7 @@ export default function Navbar() {
                     </a>
 
                     <a
-                      href="#email"
+                      href="/email"
                       onClick={closeMenu}
                       className="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-gray-900 rounded hover:bg-gray-700"
                     >
