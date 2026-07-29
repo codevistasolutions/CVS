@@ -29,10 +29,10 @@ export default function Email() {
                   we will get back to you as soon as possible.
                 </p>
                 <h4 className="mt-10 mb-4 font-semibold tracking-wider uppercase">
-                  CodeVista Solutions Pvt Ltd.  
+                  CodeVista Solutions (OPC) Pvt Ltd.  
                 </h4>
                 <div className="leading-relaxed text-gray-600">
-                  SCO-245, 1st Floor, Mattaur, Sector-70 
+                  SCO-325, 1st Floor, Mattaur Rd, Sector-70 
                   <br />
                   Mohali, India 160071
                   <br />
