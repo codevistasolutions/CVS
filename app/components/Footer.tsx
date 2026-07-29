@@ -46,7 +46,7 @@ const Footer = () => {
                     </li>
 
                     <li>
-                        <a href="/PrivacyPolicy" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Privacy Policy </a>
+                        <a href="/privacy-policy" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Privacy Policy </a>
                     </li>
                 </ul>
             </div>
