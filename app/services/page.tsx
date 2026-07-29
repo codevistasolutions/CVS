@@ -1,5 +1,6 @@
 import Navbar from "@/app/components/Navbar";
 import Services from "@/app/components/Services";
+import Steps from "@/app/components/Steps";
 import Footer from "@/app/components/Footer";
 
 export default function ServicesPage() {
@@ -7,7 +8,9 @@ export default function ServicesPage() {
     <>
       <Navbar />
       <Services />
+      <Steps />
       <Footer />
+
     </>
   );
 }
