@@ -78,7 +78,7 @@ export default function Navbar() {
                   Home
                 </a>
                 <a href="/services" className="text-base font-medium text-gray-900 hover:text-opacity-50">
-                  Services                </a>
+                  Our Services                </a>
                 <a
                   href="/testimonials"
                   className="text-base font-medium text-gray-900 hover:text-opacity-50"
