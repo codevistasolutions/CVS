@@ -11,17 +11,7 @@ export default function PrivacyPolicyPage() {
       <main className="bg-white">
         <div className="max-w-5xl mx-auto px-6 py-16">
 
-          {/* Logo */}
-          <Link href="/">
-            <Image
-              src="/logo.png" // Use the SAME logo path as your homepage
-              alt="CodeVista Solutions"
-              width={180}
-              height={55}
-              className="mb-10"
-              priority
-            />
-          </Link>
+          
 
           <h1 className="text-5xl font-bold text-gray-900">
             Privacy Policy
