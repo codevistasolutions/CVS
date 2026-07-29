@@ -157,8 +157,16 @@ const Footer = () => {
                 </li>
             </ul>
 
-            <p className="mt-8 text-sm font-normal text-gray-600 font-pj sm:order-1 sm:mt-0">© 2026 CodeVista Solutions (OPC) Pvt. Ltd., All Rights Reserved</p>
-        </div>
+<p className="mt-8 text-sm font-normal text-gray-600 font-pj sm:order-1 sm:mt-0">
+  © 2026 CodeVista Solutions (OPC) Pvt. Ltd.
+  <br className="sm:hidden" />
+  <span className="hidden sm:inline"> | </span>
+  CIN: U62011PB2025OPC066033
+  <span className="hidden sm:inline"> | </span>
+  GSTIN: 03AANCC1896N1Z4
+  <span className="hidden sm:inline"> | </span>
+  All Rights Reserved
+</p>        </div>
     </div>
 </footer>
 
