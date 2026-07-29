@@ -19,7 +19,7 @@ export default function Navbar() {
               {/* Logo */}
               <div className="flex-shrink-0">
                 <a
-                  href="#"
+                  href="/"
                   className="flex items-center rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
                 >
                   <img
