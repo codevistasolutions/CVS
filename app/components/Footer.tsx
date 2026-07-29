@@ -157,7 +157,7 @@ const Footer = () => {
                 </li>
             </ul>
 
-            <p className="mt-8 text-sm font-normal text-gray-600 font-pj sm:order-1 sm:mt-0">© Copyright 2025, All Rights Reserved</p>
+            <p className="mt-8 text-sm font-normal text-gray-600 font-pj sm:order-1 sm:mt-0">© 2026 CodeVista Solutions (OPC) Pvt. Ltd., All Rights Reserved</p>
         </div>
     </div>
 </footer>
