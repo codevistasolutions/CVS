@@ -143,7 +143,7 @@ export default function PrivacyPolicyPage() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-4">
-                9. Children's Privacy
+                9. Childrens Privacy
               </h2>
 
               <p>
