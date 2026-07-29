@@ -8,7 +8,7 @@ export default function Email() {
       {/* Contact Section: With Image Cover */}
       <div
   id="email"
-  className="bg-cover scroll-mt-28"
+  className="bg-cover scroll-mt-40"
   style={{
     backgroundImage: 'url("https://cdn.tailkit.com/media/placeholders/photo-wpU4veNGnHg-1280x800.jpg")',
   }}
