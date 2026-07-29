@@ -12,6 +12,8 @@ import Team from './components/Team'
 import Services from './components/Services'
 import ProjectDisplay from './components/ProjectDisplay'
 import Steps from './components/Steps'
+import PrivacyPolicy from './components/PrivacyPolicy'
+
 
 export default function Home() {
   return (
@@ -29,6 +31,8 @@ export default function Home() {
       {/* <ProjectDisplay /> */}
       <Testimonials />
       <Email />
+      <PrivacyPolicy />
+
     
       <Footer />
 
