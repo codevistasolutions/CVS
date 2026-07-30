@@ -1,97 +1,99 @@
 'use client';
 
-const stats = [
-  {
-    number: "2+",
-    title: "Years Experience",
-  },
-  {
-    number: "10+",
-    title: "Projects Delivered",
-  },
-  {
-    number: "100%",
-    title: "Custom Solutions",
-  },
-  {
-    number: "24/7",
-    title: "Support",
-  },
-];
-
 export default function About() {
   return (
-    <div className="bg-gray-50">
+    <main className="bg-white">
 
-      {/* HERO */}
-      <section className="relative py-10 sm:py-20 lg:py-20">
+      {/* ================= HERO ================= */}
 
-        <div className="absolute bottom-0 right-0 overflow-hidden">
-          <img
-            className="w-full h-auto origin-bottom-right transform scale-150 lg:w-auto lg:mx-auto lg:object-cover lg:scale-75"
-            src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/background-pattern.png"
-            alt=""
-          />
+      <section className="py-24 lg:py-32">
+
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <span className="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold tracking-wide uppercase">
+
+            About CodeVista
+
+          </span>
+
+          <h1 className="mt-8 text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+
+            Building Software
+            <br />
+
+            That Helps Businesses Grow
+
+          </h1>
+
+          <p className="mt-8 text-xl leading-9 text-gray-600 max-w-3xl mx-auto">
+
+            CodeVista Solutions (OPC) Pvt. Ltd. is a software development company
+            helping startups, SMEs and enterprises build websites,
+            custom software, ERP, CRM, SaaS platforms and AI-powered
+            business solutions that drive long-term growth.
+
+          </p>
+
         </div>
 
-        <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      </section>
 
-          <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2">
+            {/* ================= WHO WE ARE ================= */}
 
-            {/* LEFT */}
-            <div className="text-center lg:text-left">
+      <section className="pb-24">
 
-              <span className="inline-flex px-4 py-2 text-sm font-semibold tracking-wide text-blue-700 uppercase bg-blue-100 rounded-full">
-                About CodeVista
-              </span>
+        <div className="max-w-7xl mx-auto px-6">
 
-              <h1 className="mt-6 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
-
-                Building Software That
-                <br />
-                Powers Modern Businesses
-
-              </h1>
-
-              <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-gray-600 lg:mx-0">
-
-                CodeVista Solutions (OPC) Pvt. Ltd. delivers
-                custom websites, ERP systems, CRM software,
-                SaaS platforms and AI-powered business
-                solutions that help organizations scale
-                efficiently.
-
-              </p>
-
-              <div className="flex flex-col justify-center gap-4 mt-10 sm:flex-row lg:justify-start">
-
-                <a
-                  href="/email"
-                  className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-gray-900 rounded hover:bg-gray-700"
-                >
-                  Start Your Project
-                </a>
-
-                <a
-                  href="/services"
-                  className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-gray-900 transition-all duration-200 bg-white border border-gray-300 rounded hover:bg-gray-100"
-                >
-                  Explore Services
-                </a>
-
-              </div>
-
-            </div>
-
-            {/* RIGHT */}
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
 
             <div>
 
               <img
-                className="w-full mx-auto"
-                src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/illustration.png"
+
+                src="/about-story.svg"
+
                 alt="About CodeVista"
+
+                className="w-full"
+
               />
+
+            </div>
+
+            <div>
+
+              <span className="text-blue-700 font-semibold uppercase tracking-wider">
+
+                Our Story
+
+              </span>
+
+              <h2 className="mt-5 text-4xl font-bold text-gray-900">
+
+                Technology Built Around Business Goals
+
+              </h2>
+
+              <p className="mt-8 text-lg leading-9 text-gray-600">
+
+                Every business deserves technology that works
+                efficiently and scales with growth.
+
+                CodeVista Solutions was founded with a simple
+                mission—to create digital products that solve
+                real business problems instead of adding
+                unnecessary complexity.
+
+              </p>
+
+              <p className="mt-6 text-lg leading-9 text-gray-600">
+
+                Today we help organizations build modern
+                websites, enterprise software, ERP systems,
+                CRM platforms, SaaS products and custom
+                software tailored to their unique workflows.
+
+              </p>
 
             </div>
 
@@ -100,44 +102,3 @@ export default function About() {
         </div>
 
       </section>
-
-      {/* STATS */}
-
-      <section className="pb-20">
-
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-
-            {stats.map((item) => (
-
-              <div
-                key={item.title}
-                className="p-8 text-center transition duration-300 bg-white border border-gray-200 rounded-xl hover:shadow-lg"
-              >
-
-                <h2 className="text-4xl font-bold text-gray-900">
-
-                  {item.number}
-
-                </h2>
-
-                <p className="mt-3 text-gray-600">
-
-                  {item.title}
-
-                </p>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
-
-    </div>
-  );
-}
