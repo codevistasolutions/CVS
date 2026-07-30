@@ -1,12 +1,12 @@
 import Navbar from "@/app/components/Navbar";
-import Testimonials from "@/app/components/Testimonials";
+import About from "@/app/components/About";
 import Footer from "@/app/components/Footer";
 
-export default function TestimonialsPage() {
+export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <Testimonials />
+      <About />
       <Footer />
     </>
   );

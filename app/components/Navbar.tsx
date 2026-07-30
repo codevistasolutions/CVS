@@ -80,10 +80,10 @@ export default function Navbar() {
                 <a href="/services" className="text-base font-medium text-gray-900 hover:text-opacity-50">
                   Our Services                </a>
                 <a
-                  href="/testimonials"
+                  href="/about"
                   className="text-base font-medium text-gray-900 hover:text-opacity-50"
                 >
-                  Testimonials
+                  About Us
                 </a>
               </div>
 
@@ -120,11 +120,11 @@ export default function Navbar() {
                     </a>
 
                     <a
-                      href="/testimonials"
+                      href="/about"
                       onClick={closeMenu}
                       className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded hover:bg-gray-100"
                     >
-                      Testimonials
+                      About us
                     </a>
 
                     <a
