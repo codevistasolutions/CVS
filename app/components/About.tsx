@@ -17,7 +17,6 @@ const stats = [
 export default function AboutPage() {
   return (
     <>
-      <Navbar />
 
       <main className="bg-gray-50">
         <section className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white">
@@ -118,7 +117,6 @@ export default function AboutPage() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }
