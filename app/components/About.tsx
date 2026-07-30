@@ -39,17 +39,17 @@ export default function About() {
           </span>
 
           <h1 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-pj leading-tight">
-            Building Digital Products
-            <br />
-            That Drive Real Business Growth
-          </h1>
+  Software Development Company
+  <br />
+  Building Scalable Digital Solutions
+</h1>
 
-          <p className="mt-8 text-lg text-gray-600 leading-8 max-w-3xl mx-auto font-inter">
-            CodeVista Solutions (OPC) Pvt. Ltd. helps startups, SMEs and
-            enterprises build websites, ERP systems, CRM platforms,
-            SaaS products and custom software that solve real business
-            problems.
-          </p>
+<p className="mt-8 text-lg leading-8 text-gray-600 max-w-3xl mx-auto font-inter">
+  CodeVista Solutions (OPC) Pvt. Ltd. is a software development company based in
+  Mohali, Punjab, helping startups, SMEs and enterprises across India build
+  modern websites, ERP systems, CRM software, SaaS platforms, AI-powered
+  business applications and custom digital solutions that accelerate growth.
+</p>
         </div>
       </section>
 
@@ -87,29 +87,55 @@ export default function About() {
               </h2>
 
               <p className="mt-8 text-lg leading-8 text-gray-600 font-inter">
-                We founded CodeVista with one belief: software should make
-                businesses faster, smarter and more efficient.
-              </p>
+  CodeVista Solutions was founded with a simple vision—to help businesses
+  embrace digital transformation through reliable, scalable and modern software.
+  We believe technology should simplify operations, improve productivity and
+  create measurable business value rather than unnecessary complexity.
+</p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600 font-inter">
-                Instead of building generic solutions, we create platforms
-                tailored to your workflows. From websites to enterprise
-                software, every project is focused on measurable business
-                outcomes.
-              </p>
+<p className="mt-6 text-lg leading-8 text-gray-600 font-inter">
+  Our team specializes in Web Development, Custom Software Development,
+  Enterprise ERP Systems, CRM Development, SaaS Products, AI Integrations,
+  Mobile Applications and UI/UX Design. Every solution is tailored to the
+  client's workflow instead of forcing businesses to adapt to generic software.
+</p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600 font-inter">
-                Our goal isn't just delivering software—it's becoming a
-                long-term technology partner for businesses that want to
-                scale confidently.
-              </p>
+<p className="mt-6 text-lg leading-8 text-gray-600 font-inter">
+  From startups launching their first digital product to established companies
+  modernizing their operations, CodeVista works as a long-term technology
+  partner delivering secure, scalable and future-ready solutions.
+</p>
 
             </div>
 
           </div>
 
         </div>
-      </section>
+      </section> 
+
+      {/*industries we serve*/}
+
+      <section className="pb-24">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div className="text-center max-w-3xl mx-auto">
+      <span className="uppercase tracking-[0.25em] text-gray-500 text-sm font-semibold">
+        INDUSTRIES WE SERVE
+      </span>
+
+      <h2 className="mt-5 text-4xl font-bold text-gray-900 font-pj">
+        Technology Solutions Across Multiple Industries
+      </h2>
+
+      <p className="mt-6 text-lg leading-8 text-gray-600">
+        We develop software solutions for healthcare, real estate,
+        manufacturing, education, retail, logistics, finance,
+        hospitality and service-based businesses.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       {/* Stats */}
 
@@ -138,6 +164,8 @@ export default function About() {
 
         </div>
       </section>
+
+      
 
       {/* Why Choose */}
 
@@ -201,10 +229,10 @@ export default function About() {
               </h3>
 
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Empower businesses with reliable digital solutions that
-                simplify operations, improve productivity and support
-                sustainable growth.
-              </p>
+  Our mission is to empower businesses with innovative web development,
+  enterprise software, ERP, CRM and AI-powered solutions that improve
+  efficiency, reduce operational costs and support long-term digital growth.
+</p>
 
             </div>
 
@@ -215,10 +243,10 @@ export default function About() {
               </h3>
 
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                To become a trusted technology partner for businesses by
-                delivering innovative software solutions that create
-                lasting value.
-              </p>
+  We envision CodeVista Solutions becoming one of India's most trusted software
+  development companies by delivering world-class technology, exceptional
+  customer service and long-term value to every client.
+</p>
 
             </div>
 
@@ -237,15 +265,14 @@ export default function About() {
           <div className="rounded-[32px] bg-white border border-gray-200 shadow-sm px-8 py-16 text-center">
 
             <h2 className="text-4xl font-bold text-gray-900 font-pj">
-              Let's Build Something Great Together
+              Lets Build Something Great Together
             </h2>
 
             <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-              Whether you're launching a startup or modernizing an existing
-              business, we're here to turn your ideas into scalable digital
-              solutions.
-            </p>
-
+  Whether you need a business website, ERP software, CRM platform, SaaS
+  application or AI-powered business solution, our team is ready to help you
+  build technology that scales with your business.
+</p>
             <a
               href="/#contact"
               className="inline-flex px-8 py-4 mt-10 text-lg font-semibold text-white transition-all duration-200 bg-gray-900 rounded hover:bg-gray-700"
