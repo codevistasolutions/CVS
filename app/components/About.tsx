@@ -1,122 +1,143 @@
-
-import Footer from "@/app/components/Footer";
-
-export const metadata = {
-  title: "About Us | CodeVista Solutions",
-  description:
-    "Learn more about CodeVista Solutions (OPC) Pvt. Ltd. and our expertise in software, ERP, CRM, SaaS and web development.",
-};
+'use client';
 
 const stats = [
-  { value: "2+", label: "Years Experience" },
-  { value: "10+", label: "Projects Delivered" },
-  { value: "100%", label: "Custom Solutions" },
-  { value: "24/7", label: "Support" },
+  {
+    number: "2+",
+    title: "Years Experience",
+  },
+  {
+    number: "10+",
+    title: "Projects Delivered",
+  },
+  {
+    number: "100%",
+    title: "Custom Solutions",
+  },
+  {
+    number: "24/7",
+    title: "Support",
+  },
 ];
 
-export default function AboutPage() {
+export default function About() {
   return (
-    <>
+    <div className="bg-gray-50">
 
-      <main className="bg-gray-50">
-        <section className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white">
-          <div className="container mx-auto px-6 py-24">
-            <span className="inline-block rounded-full bg-white/10 px-4 py-2 text-sm">
-              About CodeVista Solutions
-            </span>
+      {/* HERO */}
+      <section className="relative py-10 sm:py-20 lg:py-20">
 
-            <h1 className="mt-8 max-w-4xl text-5xl font-bold leading-tight md:text-6xl">
-              Transforming Ideas Into Powerful Digital Solutions
-            </h1>
+        <div className="absolute bottom-0 right-0 overflow-hidden">
+          <img
+            className="w-full h-auto origin-bottom-right transform scale-150 lg:w-auto lg:mx-auto lg:object-cover lg:scale-75"
+            src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/background-pattern.png"
+            alt=""
+          />
+        </div>
 
-            <p className="mt-8 max-w-3xl text-lg text-blue-100 leading-8">
-              CodeVista Solutions (OPC) Pvt. Ltd. helps startups, SMEs and
-              enterprises build modern websites, scalable web applications,
-              ERP, CRM and SaaS products that drive business growth.
-            </p>
+        <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="/email"
-                className="rounded-lg bg-white px-8 py-4 font-semibold text-slate-900 transition hover:scale-105"
-              >
-                Get Free Consultation
-              </a>
+          <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2">
 
-              <a
-                href="/services"
-                className="rounded-lg border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-slate-900"
-              >
-                Explore Services
-              </a>
-            </div>
-          </div>
-        </section>
+            {/* LEFT */}
+            <div className="text-center lg:text-left">
 
-        <section className="container mx-auto -mt-10 px-6 pb-20">
-          <div className="grid gap-6 rounded-2xl bg-white p-8 shadow-xl md:grid-cols-4">
-            {stats.map((item) => (
-              <div key={item.label} className="text-center">
-                <h2 className="text-4xl font-bold text-slate-900">{item.value}</h2>
-                <p className="mt-2 text-gray-600">{item.label}</p>
+              <span className="inline-flex px-4 py-2 text-sm font-semibold tracking-wide text-blue-700 uppercase bg-blue-100 rounded-full">
+                About CodeVista
+              </span>
+
+              <h1 className="mt-6 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
+
+                Building Software That
+                <br />
+                Powers Modern Businesses
+
+              </h1>
+
+              <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-gray-600 lg:mx-0">
+
+                CodeVista Solutions (OPC) Pvt. Ltd. delivers
+                custom websites, ERP systems, CRM software,
+                SaaS platforms and AI-powered business
+                solutions that help organizations scale
+                efficiently.
+
+              </p>
+
+              <div className="flex flex-col justify-center gap-4 mt-10 sm:flex-row lg:justify-start">
+
+                <a
+                  href="/email"
+                  className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-gray-900 rounded hover:bg-gray-700"
+                >
+                  Start Your Project
+                </a>
+
+                <a
+                  href="/services"
+                  className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-gray-900 transition-all duration-200 bg-white border border-gray-300 rounded hover:bg-gray-100"
+                >
+                  Explore Services
+                </a>
+
               </div>
-            ))}
-          </div>
-        </section>
 
-        <section className="container mx-auto px-6 py-20">
-          <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
+            </div>
+
+            {/* RIGHT */}
+
             <div>
-              <p className="font-semibold uppercase tracking-widest text-blue-700">
-                Who We Are
-              </p>
 
-              <h2 className="mt-4 text-4xl font-bold text-slate-900">
-                Building Technology That Helps Businesses Grow
-              </h2>
+              <img
+                className="w-full mx-auto"
+                src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/illustration.png"
+                alt="About CodeVista"
+              />
 
-              <p className="mt-8 text-lg leading-8 text-gray-600">
-                CodeVista Solutions (OPC) Pvt. Ltd. is a software development
-                company focused on delivering reliable, scalable and modern
-                digital products. We specialize in custom websites, ERP, CRM,
-                SaaS platforms, business automation and AI-powered solutions.
-              </p>
-
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Every project is developed with a focus on performance,
-                security, scalability and user experience. We work closely
-                with our clients to understand their business goals and build
-                software that creates measurable value.
-              </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-10 shadow-lg">
-              <h3 className="text-3xl font-bold text-slate-900">
-                Our Mission
-              </h3>
-
-              <p className="mt-6 leading-8 text-gray-600">
-                Empower businesses through innovative technology solutions
-                that simplify operations, improve efficiency and accelerate
-                digital growth.
-              </p>
-
-              <hr className="my-10" />
-
-              <h3 className="text-3xl font-bold text-slate-900">
-                Our Vision
-              </h3>
-
-              <p className="mt-6 leading-8 text-gray-600">
-                Become a trusted technology partner by delivering secure,
-                scalable and high-quality software solutions backed by
-                exceptional service.
-              </p>
-            </div>
           </div>
-        </section>
-      </main>
 
-    </>
+        </div>
+
+      </section>
+
+      {/* STATS */}
+
+      <section className="pb-20">
+
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+
+            {stats.map((item) => (
+
+              <div
+                key={item.title}
+                className="p-8 text-center transition duration-300 bg-white border border-gray-200 rounded-xl hover:shadow-lg"
+              >
+
+                <h2 className="text-4xl font-bold text-gray-900">
+
+                  {item.number}
+
+                </h2>
+
+                <p className="mt-3 text-gray-600">
+
+                  {item.title}
+
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
   );
 }
