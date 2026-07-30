@@ -97,7 +97,7 @@ export default function About() {
   Our team specializes in Web Development, Custom Software Development,
   Enterprise ERP Systems, CRM Development, SaaS Products, AI Integrations,
   Mobile Applications and UI/UX Design. Every solution is tailored to the
-  client's workflow instead of forcing businesses to adapt to generic software.
+  clients workflow instead of forcing businesses to adapt to generic software.
 </p>
 
 <p className="mt-6 text-lg leading-8 text-gray-600 font-inter">
@@ -243,7 +243,7 @@ export default function About() {
               </h3>
 
               <p className="mt-6 text-lg leading-8 text-gray-600">
-  We envision CodeVista Solutions becoming one of India's most trusted software
+  We envision CodeVista Solutions becoming one of Indias most trusted software
   development companies by delivering world-class technology, exceptional
   customer service and long-term value to every client.
 </p>
