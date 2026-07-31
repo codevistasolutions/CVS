@@ -170,7 +170,7 @@ export default function About() {
               <p className="mt-6 text-lg leading-9 text-gray-600">
                 From business websites and enterprise ERP software to CRM
                 platforms, SaaS applications and AI-powered solutions, our
-                team builds software tailored to each client's unique
+                team builds software tailored to each clients unique
                 requirements rather than relying on generic templates.
               </p>
 
@@ -210,7 +210,7 @@ export default function About() {
                 </h3>
 
                 <p className="mt-4 leading-8 text-gray-600">
-                  To become one of India's most trusted software development
+                  To become one of Indias most trusted software development
                   companies by building innovative digital products and
                   maintaining lasting client relationships.
                 </p>
@@ -246,7 +246,7 @@ export default function About() {
     </h2>
 
     <p className="mt-6 text-lg leading-8 text-gray-600">
-      At CodeVista Solutions, we don't just build software—we solve
+      At CodeVista Solutions, we dont just build software—we solve
       business challenges. Every project is carefully planned,
       professionally developed and optimized to deliver measurable
       business outcomes through modern technology.

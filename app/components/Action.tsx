@@ -13,7 +13,7 @@ export default function Action() {
       <div className="relative mx-auto max-w-6xl px-6 text-center">
 
         <span className="rounded-full bg-white/20 px-5 py-2 text-sm font-semibold text-white">
-          Let's Build Something Amazing
+          Lets Build Something Amazing
         </span>
 
         <h2 className="mt-8 text-4xl font-black text-white md:text-6xl">
