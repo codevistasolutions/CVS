@@ -142,27 +142,27 @@ export default function Footer() {
 
 <div className="mt-6 space-y-4">
 
-  <Link href="/website-development" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/WebsiteDevelopment" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     Website Development
   </Link>
 
-  <Link href="/erp-development" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/ERPDevelopment" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     ERP Development
   </Link>
 
-  <Link href="/crm-development" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/CRMDevelopment" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     CRM Development
   </Link>
 
-  <Link href="/saas-development" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/SAASDevelopment" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     SaaS Development
   </Link>
 
-  <Link href="/ai-solutions" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/AISolutions" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     AI Solutions
   </Link>
 
-  <Link href="/custom-software" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/CustomSoftware" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     Custom Software
   </Link>
 
@@ -184,11 +184,11 @@ export default function Footer() {
     Home
   </Link>
 
-  <Link href="/about" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/About" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     About Us
   </Link>
 
-  <Link href="/our-services" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/Services" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     Our Services
   </Link>
 
@@ -196,7 +196,7 @@ export default function Footer() {
     Portfolio
   </Link>
 
-  <Link href="/contact" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/Email" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     Contact
   </Link>
 
