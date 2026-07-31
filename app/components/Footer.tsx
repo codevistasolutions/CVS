@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="relative z-10 max-w-2xl">
 
             <span className="rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-semibold backdrop-blur">
-              Let's Build Something Amazing
+              Lets Build Something Amazing
             </span>
 
             <h2 className="mt-6 text-4xl font-black leading-tight lg:text-5xl">
