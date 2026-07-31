@@ -9,6 +9,12 @@ import About from './components/About'
 import Email from './components/Email'
 import Team from './components/Team'
 import ProjectDisplay from './components/ProjectDisplay'
+import Trusted from "./components/Trusted"
+import Action from './components/Action'
+import Industries from "./components/Industries"
+import Questions from "./components/Questions"
+
+
 
 
 export default function Home() {
@@ -17,15 +23,17 @@ export default function Home() {
 
       <Navbar />
       <HeroContent />
-      <LogosSection />
-      <Features />
-      <Working />
+      <Trusted />
+      <Action />
+      <Industries />
+      <Questions />
+      {/* <LogosSection /> */}
+      {/* <Features /> */}
+      {/* <Working /> */}
       {/* <About /> */}
       {/* <Team /> */}
       {/* <ProjectDisplay /> */}
       <Email />
-
-    
       <Footer />
 
     </>

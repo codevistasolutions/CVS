@@ -2,18 +2,152 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================
+   CodeVista Solutions Design System
+========================================== */
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --card: #ffffff;
+
+  --primary: #f97316;
+  --primary-light: #fb923c;
+
+  --text: #111827;
+  --muted: #6b7280;
+
+  --border: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  background: var(--background);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+/* Text Selection */
+
+::selection {
+  background: #f97316;
+  color: white;
+}
+
+/* Gradient Text */
+
+.gradient-text {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    135deg,
+    #f97316,
+    #fb923c
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Premium Grid Background */
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+}
+
+/* Orange Glow */
+
+.orange-glow {
+  box-shadow:
+    0 0 60px rgba(249, 115, 22, 0.25);
+}
+
+/* Glass Effect */
+
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+/* Smooth Animations */
+
+* {
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    transform,
+    opacity,
+    box-shadow;
+}
+
+/* Focus */
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Utility */
+
+.container-padding {
+  @apply px-6 lg:px-8;
+}
+
+/* Prevent Horizontal Scroll */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }

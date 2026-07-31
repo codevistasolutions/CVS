@@ -1,53 +1,162 @@
-'use client';
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HeroOne() {
-    return (
-        <div className="bg-gray-50">
-            <section className="relative py-10 sm:py-20 lg:py-20">
+  return (
+    <section className="relative overflow-hidden bg-brand-dark">
+      {/* Background */}
+      <div className="absolute inset-0 bg-hero-grid opacity-[0.04]" />
 
+      <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-brand-orange/20 blur-[180px]" />
 
-                <div className="absolute bottom-0 right-0 overflow-hidden">
-                    <img
-                        className="w-full h-auto origin-bottom-right transform scale-150 lg:w-auto lg:mx-auto lg:object-cover lg:scale-75"
-                        src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/background-pattern.png"
-                        alt=""
-                    />
-                </div>
+      <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-6 pt-32 pb-24 lg:px-8">
 
-                <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2">
+        <div className="grid w-full items-center gap-20 lg:grid-cols-2">
 
-                        {/* LEFT CONTENT */}
-                        <div className="text-center lg:text-left xl:pr-20">
-                            <h1 className="text-3xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-5xl font-pj">
-                                Turning Ideas into Scalable Digital Solutions
-                            </h1>
+          {/* LEFT */}
 
-                            <p className="mt-4 text-lg text-gray-600 font-inter max-w-xl mx-auto lg:mx-0">
-                                We build reliable softwares, web and enterprise applications
-                                tailored to help businesses grow and adapt in a digital-first world.
-                            </p>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: .8 }}
+          >
 
-                            <a
-                                href="#contact"
-                                className="inline-flex px-8 py-4 mt-8 text-lg font-semibold text-white transition-all duration-200 bg-gray-900 rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                            >
-                                Get in Touch
-                            </a>
-                        </div>
+            {/* Badge */}
 
-                        {/* RIGHT IMAGE */}
-                        <div>
-                            <img
-                                className="w-full mx-auto"
-                                src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/illustration.png"
-                                alt="CodeVista Solutions Illustration"
-                            />
-                        </div>
+            <div className="inline-flex items-center rounded-full border border-brand-orange/30 bg-brand-orange/10 px-5 py-2">
 
-                    </div>
-                </div>
-            </section>
+              <span className="mr-2 h-2 w-2 rounded-full bg-brand-orange animate-pulse" />
+
+              <span className="text-sm font-medium text-brand-orange">
+
+                Website Development • SaaS • AI
+
+              </span>
+
+            </div>
+
+            {/* Heading */}
+
+            <h1 className="mt-8 text-5xl font-black leading-tight text-white lg:text-7xl">
+
+              Website Development
+
+              <br />
+
+              <span className="bg-brand-gradient bg-clip-text text-transparent">
+
+                SaaS & AI Solutions
+
+              </span>
+
+              <br />
+
+              That Drive Growth
+
+            </h1>
+
+            {/* Paragraph */}
+
+            <p className="mt-8 max-w-2xl text-lg leading-8 text-brand-muted">
+
+              CodeVista Solutions builds modern websites,
+              custom software, SaaS platforms,
+              CRM systems, ERP software and AI-powered
+              business solutions that help startups and
+              growing businesses scale confidently.
+
+            </p>
+
+            {/* Buttons */}
+
+            <div className="mt-10 flex flex-wrap gap-5">
+
+              <Link
+                href="/contact"
+                className="rounded-2xl bg-brand-gradient px-8 py-4 text-lg font-semibold text-white shadow-glow transition duration-300 hover:-translate-y-1"
+              >
+                Get Free Consultation
+              </Link>
+
+              <Link
+                href="/services"
+                className="rounded-2xl border border-white/10 px-8 py-4 text-lg font-semibold text-white transition hover:border-brand-orange hover:bg-white/5"
+              >
+                Explore Services
+              </Link>
+
+            </div>
+
+            {/* Stats */}
+
+            <div className="mt-16 grid grid-cols-3 gap-8">
+
+              <div>
+
+                <h2 className="text-4xl font-black text-brand-orange">
+
+                  10+
+
+                </h2>
+
+                <p className="mt-2 text-brand-muted">
+
+                  Projects Delivered
+
+                </p>
+
+              </div>
+
+              <div>
+
+                <h2 className="text-4xl font-black text-brand-orange">
+
+                  2+
+
+                </h2>
+
+                <p className="mt-2 text-brand-muted">
+
+                  Years Experience
+
+                </p>
+
+              </div>
+
+              <div>
+
+                <h2 className="text-4xl font-black text-brand-orange">
+
+                  24/7
+
+                </h2>
+
+                <p className="mt-2 text-brand-muted">
+
+                  Support
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </motion.div>
+
+          {/* RIGHT */}
+
+          <div className="relative hidden lg:flex items-center justify-center">
+
+            {/* Right side coming in Part 1B */}
+
+          </div>
+
         </div>
-    );
+
+      </div>
+
+    </section>
+  );
 }

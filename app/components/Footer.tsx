@@ -1,178 +1,356 @@
-import React, { useState } from 'react';
+"use client";
 
-const Footer = () => {        
-    return (
-        <footer className="py-10 bg-white sm:pt-16 lg:pt-16">
-    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <img className="w-auto h-28" src="/logo.svg" alt="" />
+import Link from "next/link";
+import {
+  ArrowRight,
+  Github,
+  Instagram,
+  Linkedin,
+  Facebook,
+  Phone,
+  Mail,
+  MapPin,
+} from "lucide-react";
 
-        <div className="grid grid-cols-2 mt-4 sm:grid-cols-3 gap-y-16 lg:grid-cols-6 gap-x-16">
-            <div>
-                <h6 className="text-sm font-bold tracking-widest text-gray-900 uppercase font-pj">Company</h6>
+export default function Footer() {
+  return (
+    <footer className="relative mt-32 overflow-hidden bg-white">
 
-                <ul className="mt-8 space-y-5">
-                    <li>
-                        <a href="#about" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> About </a>
-                    </li>
+      {/* Background */}
 
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Features </a>
-                    </li>
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-orange-100 blur-3xl opacity-60" />
 
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Works </a>
-                    </li>
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage:
+              "radial-gradient(#000 1px, transparent 1px)",
+            backgroundSize: "26px 26px",
+          }}
+        />
+      </div>
 
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Career </a>
-                    </li>
-                </ul>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8"></div>
+
+        {/* CTA */}
+
+        <div className="relative overflow-hidden rounded-[40px] border border-orange-100 bg-gradient-to-br from-orange-500 to-orange-600 px-10 py-16 text-white shadow-2xl">
+
+          <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+
+          <div className="absolute -left-24 -bottom-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+
+          <div className="relative z-10 flex flex-col items-center justify-between gap-10 lg:flex-row">
+
+            <div className="max-w-2xl">
+
+              <span className="rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-semibold backdrop-blur">
+                Let's Build Something Amazing
+              </span>
+
+              <h2 className="mt-6 text-4xl font-black leading-tight lg:text-5xl">
+                Ready to Transform
+                <br />
+                Your Business?
+              </h2>
+
+              <p className="mt-6 text-lg leading-8 text-orange-50">
+                Whether you need a website, ERP, CRM, SaaS platform or AI
+                solution, CodeVista Solutions is ready to help you build
+                scalable software that drives real business growth.
+              </p>
             </div>
 
-            <div>
-                <h6 className="text-sm font-bold tracking-widest text-gray-900 uppercase font-pj">Help</h6>
+            <div className="flex flex-col gap-4">
 
-                <ul className="mt-8 space-y-5">
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Customer Support </a>
-                    </li>
+              <Link
+                href="/contact"
+                className="group inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-lg font-bold text-orange-600 transition hover:scale-105"
+              >
+                Start Your Project
 
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Delivery Details </a>
-                    </li>
+                <ArrowRight className="ml-2 transition group-hover:translate-x-1" />
+              </Link>
 
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Terms & Conditions </a>
-                    </li>
+              <Link
+                href="/portfolio"
+                className="rounded-full border border-white/30 px-8 py-4 text-center text-lg font-semibold text-white transition hover:bg-white hover:text-orange-600"
+              >
+                View Portfolio
+              </Link>
 
-                    <li>
-                        <a href="/privacy-policy" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Privacy Policy </a>
-                    </li>
-                </ul>
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
-                <h6 className="text-sm font-bold tracking-widest text-gray-900 uppercase font-pj">Resources</h6>
+          </div>
 
-                <ul className="mt-8 space-y-5">
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Free eBooks </a>
-                    </li>
-
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Development Tutorial </a>
-                    </li>
-
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> How to - Blog </a>
-                    </li>
-
-                    <li>
-                        <a href="#" title="" className="inline-flex text-sm font-normal text-gray-900 transition-all duration-300 transform font-pj hover:text-gray-600 hover:translate-x-1"> Youtube Playlist </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div className="col-span-2 sm:col-span-3 xl:pl-20">
-                <h6 className="text-sm font-bold tracking-widest text-gray-900 uppercase font-pj">Subscribe to newsletter</h6>
-
-                <div className="relative mt-8">
-                    <div className="absolute -inset-2">
-                        <div className="w-full h-full mx-auto opacity-30 blur-lg filter" style={{background: "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"}}></div>
-                    </div>
-
-                    <form action="#" method="POST" className="relative">
-                        <div className="flex">
-                            <div className="flex-1">
-                                <input type="email" name="" id="" placeholder="Enter email address" className="block w-full px-4 py-4 text-base text-gray-900 placeholder-gray-600 bg-white border-gray-300 focus:ring-gray-900 focus:border-gray-900 rounded-l-xl font-pj caret-gray-900" required />
-                            </div>
-
-                            <button type="submit" className="px-10 py-4 text-base font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent sm:px-16 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 rounded-r-xl font-pj focus:outline-none">Join</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div className="grid grid-cols-1 mt-8 gap-y-8 sm:grid-cols-2 sm:gap-x-4">
-                    <div>
-                        <h6 className="text-sm font-bold tracking-widest text-gray-900 uppercase font-pj">Call us</h6>
-                        <p className="mt-2.5 text-m font-pj text-gray-900 ">
-                            <a href="#" title=""> +91 7888968943 </a>
-                        </p>
-                    </div>
-
-                    <div>
-                        <h6 className="text-sm font-bold tracking-widest text-gray-900 uppercase font-pj">Email us</h6>
-                        <p className="mt-2.5 text-m font-pj text-gray-900 ">
-                            <a href="#" title=""> support@codevistasolutions.com </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <hr className="mt-16 border-gray-200" />
+        {/* Main Footer */}
 
-        <div className="mt-8 sm:flex sm:items-center sm:justify-between">
-            <ul className="flex items-center justify-start space-x-3 sm:order-2 sm:justify-end">
-                {/* <li>
-                    <a href="#" target="_blank" title="" className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-gray-200" rel="noopener">
-                        <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
-                            ></path>
-                        </svg>
-                    </a>
-                </li> */}
+        <div className="mt-24 rounded-[40px] border border-gray-200 bg-white p-10 shadow-xl">
 
-                <li>
-                    <a href="https://www.facebook.com/share/1Bizf9TQ4z/?mibextid=wwXIfr" target="_blank" title="" className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-gray-200" rel="noopener">
-                        <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
-                        </svg>
-                    </a>
-                </li>
+          <div className="grid gap-14 lg:grid-cols-4">
+                      {/* Company */}
 
-                <li>
-                    <a href="https://www.instagram.com/codevista_solutions?igsh=cncxOWJ6ZGh3YmIw" target="_blank" title="" className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-gray-200" rel="noopener">
-                        <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
-                            <circle cx="16.806" cy="7.207" r="1.078"></circle>
-                            <path
-                                d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
-                            ></path>
-                        </svg>
-                    </a>
-                </li>
+          <div>
 
-                <li>
-                    <a href="https://github.com/codevistasolutions" target="_blank" title="" className="inline-flex items-center justify-center w-10 h-10 text-gray-900 transition-all duration-200 rounded-full hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-gray-200" rel="noopener">
-                        <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
-                            ></path>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-
-<p className="mt-8 text-sm font-normal text-gray-600 font-pj sm:order-1 sm:mt-0 leading-6">
-  <span className="block">
-    © 2026 CodeVista Solutions (OPC) Pvt. Ltd. | All Rights Reserved
+<Link
+  href="/"
+  className="text-3xl font-black tracking-tight text-gray-900"
+>
+  CodeVista{" "}
+  <span className="text-orange-500">
+    Solutions
   </span>
-  <span className="block">
-    CIN: U62011PB2025OPC066033
-  </span>
-  <span className="block">
-    GSTIN: 03AANCC1896N1Z4
-  </span>
-</p>      
+</Link>
+
+<p className="mt-6 leading-8 text-gray-600">
+  We build premium websites, ERP systems, CRM platforms,
+  SaaS products, AI-powered applications and custom software
+  that help startups and enterprises scale faster.
+</p>
+
+<div className="mt-8 flex flex-wrap gap-3">
+
+<div className="mt-8 flex flex-wrap gap-3">
+
+<Link
+  href="https://linkedin.com"
+  target="_blank"
+  className="rounded-full border border-gray-200 p-3 text-gray-700 transition hover:border-orange-500 hover:bg-orange-500 hover:text-white"
+>
+  <span>LinkedIn</span>
+</Link>
+
+<Link
+  href="https://github.com"
+  target="_blank"
+  className="rounded-full border border-gray-200 p-3 text-gray-700 transition hover:border-orange-500 hover:bg-orange-500 hover:text-white"
+>
+<span>Github</span></Link>
+
+<Link
+  href="https://instagram.com"
+  target="_blank"
+  className="rounded-full border border-gray-200 p-3 text-gray-700 transition hover:border-orange-500 hover:bg-orange-500 hover:text-white"
+>
+<span>Instagram</span></Link>
+
+<Link
+  href="https://facebook.com"
+  target="_blank"
+  className="rounded-full border border-gray-200 p-3 text-gray-700 transition hover:border-orange-500 hover:bg-orange-500 hover:text-white"
+>
+<span>Facebook</span></Link>
+
 </div>
+
+</div>
+
+</div>
+
+{/* Services */}
+
+<div>
+
+<h3 className="text-xl font-bold text-gray-900">
+  Services
+</h3>
+
+<div className="mt-6 space-y-4">
+
+  {[
+    ["Website Development", "/WebsiteDevelopment"],
+    ["ERP Development", "/ERPDevelopment"],
+    ["CRM Development", "/CRMDevelopment"],
+    ["SaaS Development", "/SaaSDevelopment"],
+    ["AI Solutions", "/AISolutions"],
+    ["Custom Software", "/CustomSoftware"],
+  ].map(([title, href]) => (
+    <Link
+      key={title}
+      href={href}
+      className="block font-medium text-gray-600 transition hover:translate-x-2 hover:text-orange-500"
+    >
+      {title}
+    </Link>
+  ))}
+
+</div>
+
+</div>
+
+{/* Company Links */}
+
+<div>
+
+<h3 className="text-xl font-bold text-gray-900">
+  Company
+</h3>
+
+<div className="mt-6 space-y-4">
+
+  {[
+    ["Home", "/"],
+    ["About Us", "/about"],
+    ["Our Services", "/OurServices"],
+    ["Portfolio", "/portfolio"],
+    ["Contact", "/email"],
+  ].map(([title, href]) => (
+    <Link
+      key={title}
+      href={href}
+      className="block font-medium text-gray-600 transition hover:translate-x-2 hover:text-orange-500"
+    >
+      {title}
+    </Link>
+  ))}
+
+</div>
+
+</div>
+
+{/* Contact */}
+
+<div>
+
+<h3 className="text-xl font-bold text-gray-900">
+  Contact
+</h3>
+
+<div className="mt-6 space-y-6">
+
+  <div className="flex items-start gap-4">
+
+    <div className="rounded-2xl bg-orange-100 p-3">
+      <Phone className="text-orange-500" size={20} />
     </div>
+
+    <div>
+
+      <p className="text-sm text-gray-500">
+        Phone
+      </p>
+
+      <a
+        href="tel:+917888968943"
+        className="font-semibold text-gray-900 hover:text-orange-500"
+      >
+        +91 78889 68943
+      </a>
+
+    </div>
+
+  </div>
+
+  <div className="flex items-start gap-4">
+
+    <div className="rounded-2xl bg-orange-100 p-3">
+      <Mail className="text-orange-500" size={20} />
+    </div>
+
+    <div>
+
+      <p className="text-sm text-gray-500">
+        Email
+      </p>
+
+      <a
+        href="mailto:solutionscodevista@gmail.com"
+        className="font-semibold break-all text-gray-900 hover:text-orange-500"
+      >
+        solutionscodevista@gmail.com
+      </a>
+
+    </div>
+
+  </div>
+
+  <div className="flex items-start gap-4">
+
+    <div className="rounded-2xl bg-orange-100 p-3">
+      <MapPin className="text-orange-500" size={20} />
+    </div>
+
+    <div>
+
+      <p className="text-sm text-gray-500">
+        Office
+      </p>
+
+      <p className="font-semibold text-gray-900 leading-7">
+        SCO 325 First Floor, Mattaur Rd, Sector-70, Mohali,
+        Punjab,
+        India
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+</div>
+
+{/* Bottom Bar */}
+
+<div className="mt-12 flex flex-col items-center justify-between gap-6 border-t border-gray-200 pt-8 text-center lg:flex-row lg:text-left">
+
+  <div>
+
+    <p className="font-semibold text-gray-900">
+      © 2026 CodeVista Solutions (OPC) Pvt. Ltd.
+    </p>
+
+    <p className="mt-2 text-sm text-gray-500">
+      All Rights Reserved.
+    </p>
+
+    <div className="mt-3 flex flex-wrap justify-center gap-5 text-sm text-gray-500 lg:justify-start">
+
+      <span>
+        CIN: U62011PB2025OPC066033
+      </span>
+
+      <span>
+        GSTIN: 03AANCC1896N1Z4
+      </span>
+
+    </div>
+
+  </div>
+
+  <div className="flex flex-wrap items-center justify-center gap-6">
+
+    <Link
+      href="/privacy-policy"
+      className="font-medium text-gray-600 transition hover:text-orange-500"
+    >
+      Privacy Policy
+    </Link>
+
+    <Link
+      href="/terms-and-conditions"
+      className="font-medium text-gray-600 transition hover:text-orange-500"
+    >
+      Terms & Conditions
+    </Link>
+
+    <Link
+      href="/contact"
+      className="font-medium text-gray-600 transition hover:text-orange-500"
+    >
+      Contact
+    </Link>
+
+  </div>
+
+</div>
+
+</div>
+
 </footer>
-
-    )
+);
 }
-export default Footer;
-

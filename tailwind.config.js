@@ -17,6 +17,20 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        brand: {
+          background: "#FFFFFF",
+          surface: "#F8FAFC",
+          card: "#FFFFFF",
+        
+          text: "#111827",
+          muted: "#64748B",
+        
+          orange: "#FF8C42",
+          orangeLight: "#FFB26B",
+        
+          border: "#E5E7EB",
+        },
+      
         'customOrange-200': '#FDEDE9',
         'customOrange-300': '#FBDBD3',
         'customOrange-400': '#F7B6A6',
@@ -24,7 +38,7 @@ module.exports = {
         'customOrange-600': '#D46349',
         'customOrange-700': '#B95944',
         'customOrange-800': '#83453A',
-    },
+      },
       maxWidth: {
         "8xl": "90rem",
         "9xl": "105rem",
@@ -38,6 +52,57 @@ module.exports = {
         90: 90,
         100: 100,
       },
+
+      boxShadow: {
+        glow: "0 0 60px rgba(255,140,66,.30)",
+        card: "0 15px 45px rgba(0,0,0,.35)",
+      },
+      
+      backgroundImage: {
+        "hero-grid":
+          "linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px)",
+      
+        "brand-gradient":
+          "linear-gradient(135deg,#FF8C42 0%,#FFB26B 100%)",
+      },
+      
+      animation: {
+        float: "float 6s ease-in-out infinite",
+        glow: "glow 3s ease-in-out infinite",
+        fadeUp: "fadeUp .8s ease forwards",
+      },
+      
+      keyframes: {
+        float: {
+          "0%,100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-14px)",
+          },
+        },
+      
+        glow: {
+          "0%,100%": {
+            opacity: ".45",
+          },
+          "50%": {
+            opacity: "1",
+          },
+        },
+      
+        fadeUp: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(40px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0px)",
+          },
+        },
+      },
+
       typography: {
         DEFAULT: {
           css: {

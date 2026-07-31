@@ -1,73 +1,151 @@
-'use client';
+"use client";
 
-import { CgWebsite } from 'react-icons/cg';
-import { AiOutlineMobile } from 'react-icons/ai';
-import { MdOutlineDesignServices, MdOutlineComputer } from 'react-icons/md';
+import Link from "next/link";
+import {
+  Globe,
+  Database,
+  Users,
+  Cloud,
+  Bot,
+  Settings,
+  ArrowRight,
+} from "lucide-react";
 
-export default function FeaturesSubtleItemBoxes() {
-    return (
-        <>
-            {/* Features Section: Ultra Tight - Almost Zero Side Gaps */}
-            <div id='services' className="bg-white -mx-4 lg:-mx-0">
-                <div className="container xl:max-w-7xl mx-auto px-0 py-16 lg:py-32 space-y-16">
-                    {/* Heading */}
-                    <div className="text-center px-4">
-                        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-                            Our
-                            <span className="text-customOrange-500"> Services </span>
-                            
-                        </h2>
-                        <div className="w-12 h-1.5 bg-customOrange-500 rounded-lg mb-3 mx-auto" />
-                        <h3 className="md:text-lg text-gray-600 md:leading-relaxed font-medium lg:w-2/3 mx-auto">
-                            Comprehensive technology solutions designed to optimize your workflow and enhance your digital presence.</h3>
+const services = [
+  {
+    title: "Website Development",
+    href: "/services/web-development",
+    icon: Globe,
+    description:
+      "Modern, SEO-optimized websites built with Next.js, React and the latest web technologies to help your business grow online.",
+  },
+  {
+    title: "ERP Development",
+    href: "/services/erp-development",
+    icon: Database,
+    description:
+      "Custom ERP solutions that automate inventory, HR, finance, operations and business workflows.",
+  },
+  {
+    title: "CRM Development",
+    href: "/services/crm-development",
+    icon: Users,
+    description:
+      "Powerful CRM systems to manage leads, customers, sales pipelines and support from one place.",
+  },
+  {
+    title: "SaaS Development",
+    href: "/services/saas-development",
+    icon: Cloud,
+    description:
+      "Scalable cloud-based SaaS applications with secure architecture and subscription-ready features.",
+  },
+  {
+    title: "AI Solutions",
+    href: "/services/ai-solutions",
+    icon: Bot,
+    description:
+      "AI chatbots, intelligent automation and business solutions powered by modern artificial intelligence.",
+  },
+  {
+    title: "Custom Software",
+    href: "/services/custom-software",
+    icon: Settings,
+    description:
+      "Tailor-made software engineered specifically for your business goals, processes and future growth.",
+  },
+];
+
+export default function ServicesPreview() {
+  return (
+    <section className="relative overflow-hidden bg-slate-50 py-24">
+
+      {/* Background Blur */}
+
+      <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-orange-100 blur-3xl opacity-60" />
+      <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-orange-200 blur-3xl opacity-40" />
+
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+
+        {/* Heading */}
+
+        <div className="mx-auto max-w-3xl text-center">
+
+          <span className="inline-flex items-center rounded-full border border-orange-200 bg-orange-50 px-4 py-1 text-sm font-semibold text-orange-600">
+            OUR SERVICES
+          </span>
+
+          <h2 className="mt-6 text-4xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
+            Custom Software Development Services
+          </h2>
+
+          <p className="mt-6 text-lg leading-8 text-slate-600">
+            CodeVista Solutions builds high-performance websites, ERP systems,
+            CRM software, SaaS platforms, AI-powered applications and custom
+            software solutions that help businesses automate operations, improve
+            productivity and accelerate growth.
+          </p>
+
+        </div>
+
+        {/* Service Grid Starts Here */}
+        <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3"> 
+        {services.map((service) => {
+            const Icon = service.icon;
+
+            return (
+              <Link
+                key={service.title}
+                href={service.href}
+                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-orange-300 hover:shadow-2xl hover:shadow-orange-100"
+              >
+                {/* Hover Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+                {/* Top Accent */}
+                <div className="absolute left-0 top-0 h-1 w-0 bg-gradient-to-r from-orange-500 to-orange-400 transition-all duration-500 group-hover:w-full" />
+
+                <div className="relative z-10">
+
+                  {/* Icon */}
+                  <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-200 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                    <Icon className="h-8 w-8" />
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-2xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-orange-600">
+                    {service.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="mt-4 leading-7 text-slate-600">
+                    {service.description}
+                  </p>
+
+                  {/* Divider */}
+                  <div className="my-7 h-px w-full bg-gradient-to-r from-slate-200 to-transparent" />
+
+                  {/* CTA */}
+                  <div className="flex items-center justify-between">
+
+                    <span className="font-semibold text-slate-900 transition-colors duration-300 group-hover:text-orange-600">
+                      Learn More
+                    </span>
+
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-orange-100 text-orange-600 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white">
+                      <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                     </div>
-                    {/* END Heading */}
 
-                    {/* Features Grid - Zero Side Gaps on Large Screens */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-2 px-4 lg:px-0">
-                        <div className="group p-4 lg:p-5 bg-gray-50 rounded-xl">
-                            <div className="relative w-12 mb-7 text-customOrange-500">
-                                <CgWebsite className="inline-block w-10 h-10 transition duration-300 translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0" />
-                            </div>
-                            <h4 className="text-xl font-bold mb-3 text-gray-900">ERP Implementation</h4>
-                            <p className="leading-relaxed text-gray-600 text-sm font-medium">
-                                Streamline your business operations efficiently with comprehensive ERPNext solutions tailored to your workflow.
-                            </p>
-                        </div>
+                  </div>
 
-                        <div className="group p-4 lg:p-5 bg-gray-50 rounded-xl">
-                            <div className="relative w-12 mb-7 text-customOrange-500">
-                                <AiOutlineMobile className="inline-block w-10 h-10 transition duration-300 translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0" />
-                            </div>
-                            <h4 className="text-xl font-bold mb-3 text-gray-900">Web Development</h4>
-                            <p className="leading-relaxed text-gray-600 text-sm font-medium">
-                                Modern, responsive, and high-performance websites built with the latest technologies to engage your audience.
-                            </p>
-                        </div>
-
-                        <div className="group p-4 lg:p-5 bg-gray-50 rounded-xl">
-                            <div className="relative w-12 mb-7 text-customOrange-500">
-                                <MdOutlineDesignServices className="inline-block w-10 h-10 transition duration-300 translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0" />
-                            </div>
-                            <h4 className="text-xl font-bold mb-3 text-gray-900">Custom IT Solutions</h4>
-                            <p className="leading-relaxed text-gray-600 text-sm font-medium">
-                                Bespoke software and IT infrastructure designed specifically to address your unique business challenges.
-                            </p>
-                        </div>
-
-                        <div className="group p-4 lg:p-5 bg-gray-50 rounded-xl">
-                            <div className="relative w-12 mb-7 text-customOrange-500">
-                                <MdOutlineComputer className="inline-block w-10 h-10 transition duration-300 translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0" />
-                            </div>
-                            <h4 className="text-xl font-bold mb-3 text-gray-900">Other Specialties</h4>
-                            <p className="leading-relaxed text-gray-600 text-sm font-medium">
-                                Cloud migration, cybersecurity audits, and digital transformation consulting to future-proof your company.
-                            </p>
-                        </div>
-                    </div>
-                    {/* END Features */}
                 </div>
-            </div>
-        </>
-    );
+              </Link>
+            );
+          })} 
+                  </div>
+
+                  </div>
+      
+    </section>
+  );
 }
