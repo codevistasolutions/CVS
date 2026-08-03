@@ -118,9 +118,6 @@ export default function TermsConditionsPage() {
 
       </section>
 
-    </main>
-  );
-}
         <section>
 
           <h2 className="text-3xl font-bold text-slate-900">
@@ -468,5 +465,6 @@ export default function TermsConditionsPage() {
         </section>
 
       </section>
-    </main>
-;
+     </main>
+  );
+}
