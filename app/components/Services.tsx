@@ -14,14 +14,14 @@ import {
 const services = [
   {
     title: "Website Development",
-    href: "/services/web-development",
+    href: "/services/WebsiteDevelopment",
     icon: Globe,
     description:
       "Modern, SEO-optimized websites built with Next.js, React and the latest web technologies to help your business grow online.",
   },
   {
     title: "ERP Development",
-    href: "/services/erp-development",
+    href: "/services/ERPDevelopment",
     icon: Database,
     description:
       "Custom ERP solutions that automate inventory, HR, finance, operations and business workflows.",
