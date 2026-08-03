@@ -584,7 +584,7 @@ export default function PrivacyPolicyPage() {
 
               <h2 className="text-3xl font-bold text-slate-900">
 
-                Children's Privacy
+                Childrens Privacy
 
               </h2>
 
@@ -615,7 +615,7 @@ export default function PrivacyPolicyPage() {
                 We may update this Privacy Policy periodically to reflect
                 changes in our services, legal requirements, or business
                 practices. Any updates will be published on this page along
-                with the revised "Last Updated" date.
+                with the revised Last Updated date.
 
               </p>
 
@@ -726,10 +726,11 @@ export default function PrivacyPolicyPage() {
                   </p>
 
                   <a
-                    href="mailto:info@codevistasolutions.com"
+                    href="mailto: solutionscodevista@gmail.com"
+
                     className="mt-2 block text-xl font-bold hover:underline"
                   >
-                    info@codevistasolutions.com
+                    solutionscodevista@gmail.com
                   </a>
 
                 </div>
