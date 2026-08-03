@@ -52,7 +52,7 @@ export default function Footer() {
           <div className="relative z-10 mt-10 flex flex-col gap-4 lg:mt-0">
 
             <Link
-              href="/contact"
+              href="/email"
               className="rounded-full bg-white px-8 py-4 text-center text-lg font-bold text-orange-600 transition hover:scale-105"
             >
               Start Your Project →
