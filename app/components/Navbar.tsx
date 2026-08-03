@@ -122,53 +122,39 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
 
-<div
-  className={`fixed inset-0 z-40 md:hidden transition-all duration-300 ${
-    mobileMenu
-      ? "pointer-events-auto opacity-100"
-      : "pointer-events-none opacity-0"
-  }`}
->
-  {/* Overlay */}
-  <div
-    onClick={() => setMobileMenu(false)}
-    className="absolute inset-0 bg-black/40 backdrop-blur-sm"
-  />
+      {mobileMenu && (
+        <div className="border-t bg-white md:hidden">
 
-  {/* Menu */}
-  <div
-    className={`absolute left-0 right-0 top-20 mx-4 rounded-3xl bg-white shadow-2xl transition-all duration-300 ${
-      mobileMenu
-        ? "translate-y-0 opacity-100"
-        : "-translate-y-8 opacity-0"
-    }`}
-  >
-    <div className="flex flex-col p-6">
+          <div className="space-y-5 p-6">
 
-      {[
-        ["Home", "/"],
-        ["Our Services", "/services"],
-        ["About Us", "/about"],
-        ["Contact Us", "/email"],
-      ].map(([title, href]) => (
-        <Link
-          key={title}
-          href={href}
-          onClick={() => setMobileMenu(false)}
-          className="rounded-xl px-4 py-4 text-lg font-medium text-gray-700 transition hover:bg-orange-50 hover:text-orange-500"
-        >
-          {title}
-        </Link>
-      ))}
+            <Link href="/" onClick={() => setMobileMenu(false)}>
+              Home
+            </Link>
 
-      <Link
-        href="/email"
-        onClick={() => setMobileMenu(false)}
-        className="mt-5 rounded-full bg-orange-500 py-4 text-center font-semibold text-white transition hover:bg-orange-600"
-      >
-        Book Free Consultation
-      </Link>
+            <Link href="/services" onClick={() => setMobileMenu(false)}>
+              Our Services
+            </Link>
 
-    </div>
-  </div>
-</div>
+            <Link href="/about" onClick={() => setMobileMenu(false)}>
+              About Us
+            </Link>
+
+            <Link href="/email" onClick={() => setMobileMenu(false)}>
+              Contact Us
+            </Link>
+
+            <Link
+              href="/email"
+              onClick={() => setMobileMenu(false)}
+              className="block rounded-full bg-orange-500 py-3 text-center font-semibold text-white"
+            >
+              Book Free Consultation!
+            </Link>
+
+          </div>
+
+        </div>
+      )}
+    </header>
+  );
+}
