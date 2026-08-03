@@ -184,11 +184,11 @@ export default function Footer() {
     Home
   </Link>
 
-  <Link href="/About" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/about" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     About Us
   </Link>
 
-  <Link href="/Services" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/services" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     Our Services
   </Link>
 
@@ -196,7 +196,7 @@ export default function Footer() {
     Portfolio
   </Link>
 
-  <Link href="/Email" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
+  <Link href="/email" className="block text-gray-600 transition hover:translate-x-2 hover:text-orange-500">
     Contact
   </Link>
 
