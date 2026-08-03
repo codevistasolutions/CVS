@@ -28,28 +28,28 @@ const services = [
   },
   {
     title: "CRM Development",
-    href: "/services/crm-development",
+    href: "/services/CRMDevelopment",
     icon: Users,
     description:
       "Powerful CRM systems to manage leads, customers, sales pipelines and support from one place.",
   },
   {
     title: "SaaS Development",
-    href: "/services/saas-development",
+    href: "/services/SAASDevelopment",
     icon: Cloud,
     description:
       "Scalable cloud-based SaaS applications with secure architecture and subscription-ready features.",
   },
   {
     title: "AI Solutions",
-    href: "/services/ai-solutions",
+    href: "/services/AISolutions",
     icon: Bot,
     description:
       "AI chatbots, intelligent automation and business solutions powered by modern artificial intelligence.",
   },
   {
     title: "Custom Software",
-    href: "/services/custom-software",
+    href: "/services/CustomSoftware",
     icon: Settings,
     description:
       "Tailor-made software engineered specifically for your business goals, processes and future growth.",
