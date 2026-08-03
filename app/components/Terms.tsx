@@ -1,4 +1,4 @@
-export default function TermsConditionsPage() {
+export default function Terms() {
   return (
     <main className="bg-white">
 
@@ -17,22 +17,29 @@ export default function TermsConditionsPage() {
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            Welcome to CodeVista Solutions (OPC) Private Limited. These Terms &
-            Conditions govern your use of our website, software development,
-            web development, mobile app development, ERP, CRM, SaaS, AI,
-            automation, cloud solutions, and digital marketing services.
+            Welcome to <strong>CodeVista Solutions (OPC) Private Limited</strong>.
+            These Terms & Conditions govern your access to our website and the
+            use of our software development, website development, mobile
+            application development, ERP, CRM, SaaS, Artificial Intelligence,
+            cloud, automation, UI/UX, SEO, and digital marketing services.
           </p>
 
           <p className="mt-4 text-slate-500">
-            By accessing this website or engaging our services, you agree to
-            comply with these Terms & Conditions.
+            By accessing our website or engaging our services, you agree to be
+            legally bound by these Terms & Conditions. If you do not agree with
+            any part of these terms, please discontinue the use of our website
+            and services immediately.
           </p>
 
         </div>
 
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 py-20 space-y-16">
+      {/* Content */}
+
+      <section className="mx-auto max-w-5xl space-y-16 px-6 py-20">
+
+        {/* 1 */}
 
         <section>
 
@@ -40,62 +47,59 @@ export default function TermsConditionsPage() {
             1. Acceptance of Terms
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            By visiting our website, requesting a quotation, signing a proposal,
-            purchasing a service, or using any solution developed by CodeVista
-            Solutions (OPC) Private Limited, you acknowledge that you have read,
-            understood, and accepted these Terms & Conditions.
+          <p className="mt-6 leading-8 text-slate-600">
+            By visiting this website, requesting a quotation, purchasing a
+            service, signing an agreement, or using any solution developed by
+            CodeVista Solutions (OPC) Private Limited, you confirm that you
+            have read, understood, and accepted these Terms & Conditions.
+          </p>
+
+          <p className="mt-6 leading-8 text-slate-600">
+            These Terms apply to every visitor, customer, business partner,
+            contractor, and any person interacting with our products or
+            services.
           </p>
 
         </section>
+
+        {/* 2 */}
 
         <section>
 
           <h2 className="text-3xl font-bold text-slate-900">
-            2. Our Services
+            2. Services Offered
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            CodeVista Solutions provides professional technology solutions
-            including but not limited to:
+          <p className="mt-6 leading-8 text-slate-600">
+            CodeVista Solutions provides technology solutions including but not
+            limited to:
           </p>
 
-          <ul className="mt-8 space-y-4 list-disc pl-6 text-slate-600 leading-8">
-
-            <li>Website Design & Development</li>
-
-            <li>Custom Software Development</li>
-
+          <ul className="mt-8 list-disc space-y-4 pl-6 leading-8 text-slate-600">
+            <li>Custom Website Development</li>
+            <li>Business Software Development</li>
             <li>ERP Development</li>
-
             <li>CRM Development</li>
-
-            <li>Mobile Application Development</li>
-
+            <li>Mobile App Development</li>
             <li>SaaS Product Development</li>
-
             <li>Artificial Intelligence Solutions</li>
-
-            <li>Business Automation</li>
-
+            <li>Business Process Automation</li>
             <li>Cloud Application Development</li>
-
-            <li>Digital Marketing & SEO</li>
-
-            <li>UI/UX Design</li>
-
-            <li>API Integrations</li>
-
+            <li>UI / UX Design</li>
+            <li>API Integration</li>
+            <li>SEO & Digital Marketing</li>
             <li>Maintenance & Technical Support</li>
-
           </ul>
 
-          <p className="mt-8 text-slate-600 leading-8">
-            The exact scope, timeline, pricing, and deliverables are defined in
-            individual quotations, invoices, or signed agreements.
+          <p className="mt-8 leading-8 text-slate-600">
+            The exact scope, deliverables, pricing, and timelines for every
+            project are defined in quotations, invoices, project proposals, or
+            signed agreements.
           </p>
 
         </section>
+
+        {/* 3 */}
 
         <section>
 
@@ -103,20 +107,21 @@ export default function TermsConditionsPage() {
             3. User Responsibilities
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Clients agree to provide accurate information, timely approvals,
-            required content, branding assets, credentials, and communication
-            necessary for successful project completion.
+          <p className="mt-6 leading-8 text-slate-600">
+            Clients agree to provide accurate information, branding assets,
+            required credentials, approvals, content, feedback, and other
+            materials necessary for successful project execution.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Delays in providing required information may impact project
-            timelines and delivery schedules.
+          <p className="mt-6 leading-8 text-slate-600">
+            Delays in approvals or required information may affect delivery
+            schedules. CodeVista Solutions shall not be responsible for delays
+            caused by the client.
           </p>
 
         </section>
 
-      </section>
+        {/* 4 */}
 
         <section>
 
@@ -124,43 +129,22 @@ export default function TermsConditionsPage() {
             4. Pricing & Payment Terms
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            All quotations, proposals, and estimates issued by CodeVista Solutions
-            (OPC) Private Limited are valid for the period specified within the
-            quotation unless otherwise stated. Project pricing is based on the
-            agreed scope of work and may be revised if additional features,
-            integrations, or services are requested after approval.
+          <p className="mt-6 leading-8 text-slate-600">
+            All quotations issued by CodeVista Solutions are based upon the
+            agreed scope of work. Any modifications, additional functionality,
+            or change requests may require revised pricing.
           </p>
 
-          <ul className="mt-8 space-y-4 list-disc pl-6 text-slate-600 leading-8">
-            <li>
-              An advance payment may be required before project commencement.
-            </li>
-
-            <li>
-              Remaining payments shall be made according to the agreed milestone
-              schedule or before the final delivery of the project.
-            </li>
-
-            <li>
-              Failure to make payments on time may result in the suspension of
-              development, hosting, maintenance, or support services until dues
-              are cleared.
-            </li>
-
-            <li>
-              All applicable taxes, including GST where required by law, shall
-              be charged separately unless explicitly mentioned otherwise.
-            </li>
-
-            <li>
-              Payments made for completed work are generally non-refundable,
-              except where required under applicable law or agreed upon in
-              writing.
-            </li>
+          <ul className="mt-8 list-disc space-y-4 pl-6 leading-8 text-slate-600">
+            <li>Advance payment may be required before project initiation.</li>
+            <li>Remaining payments shall follow agreed milestones.</li>
+            <li>Delayed payments may pause ongoing work.</li>
+            <li>Applicable GST and taxes shall be charged where required.</li>
+            <li>Completed work is generally non-refundable.</li>
           </ul>
 
         </section>
+                {/* 5 */}
 
         <section>
 
@@ -168,21 +152,23 @@ export default function TermsConditionsPage() {
             5. Project Scope & Change Requests
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Every project undertaken by CodeVista Solutions is executed based on
-            the approved proposal, quotation, statement of work, or signed
-            agreement. Deliverables, timelines, and pricing are determined by
-            the agreed scope before development begins.
+          <p className="mt-6 leading-8 text-slate-600">
+            Every project undertaken by CodeVista Solutions is executed
+            according to the approved quotation, proposal, statement of work,
+            or signed agreement. Deliverables and timelines are based on the
+            agreed project scope.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Any request for additional functionality, integrations, design
-            modifications, content creation, or other work outside the approved
-            scope shall be treated as a change request and may require
-            additional charges, revised timelines, or a separate quotation.
+          <p className="mt-6 leading-8 text-slate-600">
+            Any additional functionality, integrations, design modifications,
+            content creation, or feature requests beyond the approved scope
+            shall be considered a change request and may require additional
+            charges and revised delivery timelines.
           </p>
 
         </section>
+
+        {/* 6 */}
 
         <section>
 
@@ -190,26 +176,28 @@ export default function TermsConditionsPage() {
             6. Intellectual Property Rights
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Upon receipt of all outstanding payments, ownership of the final
-            deliverables specifically developed for the client shall transfer to
-            the client unless otherwise specified in a written agreement.
+          <p className="mt-6 leading-8 text-slate-600">
+            Ownership of the final deliverables shall transfer to the client
+            only after full payment of all outstanding invoices unless
+            otherwise agreed in writing.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            CodeVista Solutions retains ownership of its proprietary software
-            frameworks, reusable code libraries, templates, internal tools,
-            development methodologies, technical processes, and intellectual
-            property created independently of any client project.
+          <p className="mt-6 leading-8 text-slate-600">
+            CodeVista Solutions retains ownership of its proprietary
+            frameworks, reusable code libraries, internal development tools,
+            templates, workflows, methodologies, and intellectual property
+            developed independently of client projects.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Third-party software, APIs, plugins, fonts, themes, hosting
-            platforms, cloud services, and open-source components remain subject
-            to their respective licenses and terms of use.
+          <p className="mt-6 leading-8 text-slate-600">
+            Third-party software, APIs, fonts, plugins, hosting services,
+            payment gateways, and open-source libraries remain subject to
+            their respective licenses and terms.
           </p>
 
         </section>
+
+        {/* 7 */}
 
         <section>
 
@@ -217,19 +205,21 @@ export default function TermsConditionsPage() {
             7. Project Delivery & Acceptance
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Estimated delivery timelines are based on the information available
-            at the time of project initiation and depend on timely approvals,
-            feedback, and the availability of required content from the client.
+          <p className="mt-6 leading-8 text-slate-600">
+            Estimated timelines are based on project requirements and depend
+            upon timely approvals, content submission, feedback, and client
+            communication throughout the development process.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Clients are expected to review delivered work promptly and notify us
-            of any issues within a reasonable timeframe. If no feedback is
-            received, the delivered milestone may be considered accepted.
+          <p className="mt-6 leading-8 text-slate-600">
+            Clients are expected to review completed work within a reasonable
+            period. If no feedback is received after delivery, the delivered
+            milestone may be treated as accepted.
           </p>
 
         </section>
+
+        {/* 8 */}
 
         <section>
 
@@ -237,43 +227,46 @@ export default function TermsConditionsPage() {
             8. Revisions & Ongoing Support
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
+          <p className="mt-6 leading-8 text-slate-600">
             Revisions included within the approved proposal will be completed
-            without additional charges. Requests beyond the agreed scope,
-            significant redesigns, or additional features may require separate
-            quotations.
+            without additional charges. Requests beyond the agreed scope may
+            require separate quotations.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Website maintenance, software updates, security monitoring, cloud
-            hosting, SEO services, digital marketing, and technical support are
-            provided only under an active maintenance or support agreement, if
-            applicable.
+          <p className="mt-6 leading-8 text-slate-600">
+            Website maintenance, software updates, security monitoring,
+            hosting, SEO, digital marketing, and technical support are
+            provided only under an active maintenance or support agreement,
+            where applicable.
           </p>
 
         </section>
-                <section>
+
+        {/* 9 */}
+
+        <section>
 
           <h2 className="text-3xl font-bold text-slate-900">
             9. Confidentiality
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            CodeVista Solutions (OPC) Private Limited respects the confidentiality
-            of all client information. Any confidential documents, business
-            strategies, login credentials, databases, source files, or proprietary
-            information shared with us will be handled responsibly and used only
-            for the purpose of delivering the agreed services.
+          <p className="mt-6 leading-8 text-slate-600">
+            CodeVista Solutions respects the confidentiality of all client
+            information. Business documents, credentials, databases, source
+            code, project files, and proprietary information shared with us
+            will be handled responsibly and used only for delivering the
+            agreed services.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
+          <p className="mt-6 leading-8 text-slate-600">
             Clients are also expected to maintain the confidentiality of our
-            proposals, pricing, technical documentation, development processes,
-            and any proprietary information shared during the course of a
-            project.
+            pricing, proposals, technical documentation, development methods,
+            and proprietary business information.
           </p>
 
         </section>
+
+        {/* 10 */}
 
         <section>
 
@@ -281,21 +274,23 @@ export default function TermsConditionsPage() {
             10. Third-Party Services
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Our projects may integrate or rely on third-party products,
-            platforms, APIs, payment gateways, hosting providers, cloud
-            infrastructure, plugins, or software services. These third-party
-            services operate under their own terms, privacy policies, pricing,
-            and licensing agreements.
+          <p className="mt-6 leading-8 text-slate-600">
+            Our projects may integrate third-party services including hosting
+            providers, payment gateways, cloud platforms, APIs, plugins,
+            analytics tools, communication services, and software licensed by
+            external vendors.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            CodeVista Solutions is not responsible for service interruptions,
-            pricing changes, account suspensions, feature modifications, or data
-            loss caused by third-party providers beyond our reasonable control.
+          <p className="mt-6 leading-8 text-slate-600">
+            CodeVista Solutions is not responsible for interruptions,
+            licensing changes, downtime, account suspensions, pricing changes,
+            or service failures caused by third-party providers beyond our
+            reasonable control.
           </p>
 
         </section>
+
+        {/* 11 */}
 
         <section>
 
@@ -303,20 +298,15 @@ export default function TermsConditionsPage() {
             11. Website Usage
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            You agree to use this website only for lawful purposes. You must not
-            attempt to gain unauthorized access to our systems, interfere with
-            website functionality, distribute malicious software, copy website
-            content without permission, or engage in activities that may damage
-            our reputation or services.
-          </p>
-
-          <p className="mt-6 text-slate-600 leading-8">
-            We reserve the right to restrict or terminate access to users who
-            violate these Terms & Conditions or misuse our website or services.
+          <p className="mt-6 leading-8 text-slate-600">
+            You agree to use this website only for lawful purposes. You must
+            not attempt unauthorized access, distribute malware, interfere
+            with website functionality, copy content without permission, or
+            perform activities that may harm our business or reputation.
           </p>
 
         </section>
+                {/* 12 */}
 
         <section>
 
@@ -324,21 +314,23 @@ export default function TermsConditionsPage() {
             12. Limitation of Liability
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            While we strive to deliver reliable, secure, and high-quality
-            software solutions, CodeVista Solutions (OPC) Private Limited shall
-            not be liable for indirect, incidental, special, consequential, or
-            business losses arising from the use of our website, software,
-            applications, digital marketing services, or technology solutions.
+          <p className="mt-6 leading-8 text-slate-600">
+            CodeVista Solutions (OPC) Private Limited strives to deliver
+            reliable, secure, and high-quality technology solutions. However,
+            we shall not be liable for any indirect, incidental, special,
+            consequential, or punitive damages arising from the use of our
+            services, website, software, applications, or digital platforms.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Our total liability, where legally permitted, shall be limited to
-            the amount paid by the client for the specific service giving rise
-            to the claim.
+          <p className="mt-6 leading-8 text-slate-600">
+            Our maximum liability for any claim shall not exceed the amount
+            actually paid by the client for the specific service giving rise
+            to the claim, to the maximum extent permitted under applicable law.
           </p>
 
         </section>
+
+        {/* 13 */}
 
         <section>
 
@@ -346,20 +338,22 @@ export default function TermsConditionsPage() {
             13. Disclaimer
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            All information provided on this website is published in good faith
-            for general informational purposes only. Although we make every
-            effort to ensure accuracy, we do not guarantee that all content is
-            complete, current, or free from errors.
+          <p className="mt-6 leading-8 text-slate-600">
+            All information available on this website is published in good
+            faith for general informational purposes only. While we make every
+            effort to maintain accuracy, we do not guarantee that all content
+            is complete, current, or free from errors.
           </p>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            We reserve the right to modify, update, suspend, or discontinue any
-            service, feature, pricing, or website content at any time without
-            prior notice.
+          <p className="mt-6 leading-8 text-slate-600">
+            We reserve the right to modify, suspend, replace, or discontinue
+            any feature, service, pricing, or website content without prior
+            notice whenever necessary.
           </p>
 
         </section>
+
+        {/* 14 */}
 
         <section>
 
@@ -367,15 +361,20 @@ export default function TermsConditionsPage() {
             14. Termination
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            Either party may terminate a project or service agreement in
-            accordance with the applicable contract. Upon termination, clients
-            remain responsible for payment of all completed work, approved
-            milestones, third-party costs, and any outstanding invoices incurred
-            before the termination date.
+          <p className="mt-6 leading-8 text-slate-600">
+            Either party may terminate an ongoing project or service agreement
+            according to the applicable contract or written agreement.
+          </p>
+
+          <p className="mt-6 leading-8 text-slate-600">
+            Upon termination, clients remain responsible for payment of all
+            completed work, approved milestones, third-party expenses, and any
+            outstanding invoices incurred before the termination date.
           </p>
 
         </section>
+
+        {/* 15 */}
 
         <section>
 
@@ -383,14 +382,20 @@ export default function TermsConditionsPage() {
             15. Governing Law
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
+          <p className="mt-6 leading-8 text-slate-600">
             These Terms & Conditions shall be governed by and interpreted in
-            accordance with the laws of India. Any disputes arising from the use
-            of our website or services shall be subject to the exclusive
-            jurisdiction of the competent courts in Punjab, India.
+            accordance with the laws of the Republic of India.
+          </p>
+
+          <p className="mt-6 leading-8 text-slate-600">
+            Any disputes arising out of these Terms or our services shall be
+            subject to the exclusive jurisdiction of the competent courts of
+            Punjab, India.
           </p>
 
         </section>
+
+        {/* 16 */}
 
         <section>
 
@@ -398,24 +403,32 @@ export default function TermsConditionsPage() {
             16. Changes to These Terms
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            We may revise these Terms & Conditions periodically to reflect
-            changes in our services, business practices, legal requirements, or
-            technology. Updated versions will be published on this page with the
-            revised effective date. Continued use of our website or services
-            constitutes acceptance of the updated Terms & Conditions.
+          <p className="mt-6 leading-8 text-slate-600">
+            CodeVista Solutions reserves the right to revise, update, or modify
+            these Terms & Conditions at any time to reflect legal requirements,
+            operational changes, technology updates, or improvements in our
+            services.
+          </p>
+
+          <p className="mt-6 leading-8 text-slate-600">
+            Updated versions will be published on this page. Continued use of
+            our website or services after such updates constitutes acceptance
+            of the revised Terms & Conditions.
           </p>
 
         </section>
+                {/* 17 */}
+
         <section>
 
           <h2 className="text-3xl font-bold text-slate-900">
             17. Contact Information
           </h2>
 
-          <p className="mt-6 text-slate-600 leading-8">
-            If you have any questions regarding these Terms & Conditions or any
-            of our services, please contact us using the details below.
+          <p className="mt-6 leading-8 text-slate-600">
+            If you have any questions regarding these Terms & Conditions,
+            our services, or your ongoing project, please feel free to
+            contact us using the details below.
           </p>
 
           <div className="mt-10 rounded-3xl border border-orange-100 bg-gradient-to-br from-orange-50 to-white p-8 shadow-sm">
@@ -427,20 +440,27 @@ export default function TermsConditionsPage() {
             <div className="mt-6 space-y-4 text-slate-600">
 
               <p>
-                <span className="font-semibold text-slate-900">Website:</span>{" "}
+                <span className="font-semibold text-slate-900">
+                  Website:
+                </span>{" "}
                 https://www.codevistasolutions.com
               </p>
 
               <p>
-                <span className="font-semibold text-slate-900">Email:</span>{" "}
+                <span className="font-semibold text-slate-900">
+                  Email:
+                </span>{" "}
                 info@codevistasolutions.com
               </p>
 
               <p>
-                <span className="font-semibold text-slate-900">Business:</span>{" "}
-                Website Development • Custom Software • ERP • CRM • SaaS •
-                Mobile Apps • AI Solutions • Cloud Applications • Digital
-                Marketing
+                <span className="font-semibold text-slate-900">
+                  Services:
+                </span>{" "}
+                Website Development • Custom Software Development • ERP • CRM •
+                SaaS • Mobile Applications • Artificial Intelligence • Cloud
+                Solutions • UI/UX Design • API Integration • SEO • Digital
+                Marketing • Technical Support
               </p>
 
             </div>
@@ -448,6 +468,8 @@ export default function TermsConditionsPage() {
           </div>
 
         </section>
+
+        {/* Effective Date */}
 
         <section className="rounded-3xl bg-slate-900 px-8 py-12 text-center text-white">
 
@@ -457,14 +479,15 @@ export default function TermsConditionsPage() {
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
             These Terms & Conditions are effective from the date of publication
-            and remain in force until replaced by a newer version. By continuing
-            to use our website or engage our services, you acknowledge that you
-            have read, understood, and agreed to these Terms & Conditions.
+            and remain in force until replaced by an updated version.
+            Continued use of our website or services constitutes your
+            acceptance of these Terms & Conditions.
           </p>
 
         </section>
 
       </section>
-     </main>
+
+    </main>
   );
 }
