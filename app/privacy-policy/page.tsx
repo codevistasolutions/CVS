@@ -1,5 +1,13 @@
-import PrivacyPolicy from "../components/PrivacyPolicy";
+import Navbar from "@/app/components/Navbar";
+import PrivacyPolicy from "@/app/components/OurServices/PrivacyPolicy";
+import Footer from "@/app/components/Footer";
 
 export default function Page() {
-  return <PrivacyPolicy />;
+  return (
+    <>
+      <Navbar />
+      <PrivacyPolicy />
+      <Footer />
+    </>
+  );
 }
