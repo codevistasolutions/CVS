@@ -1,124 +1,94 @@
 "use client";
 
 import Link from "next/link";
-import {
-  ArrowRight,
-  CheckCircle,
-  Rocket,
-  Cloud,
-  ShieldCheck,
-  Users,
-  Code2,
-  Database,
-  Cpu,
-  Building2,
-  HeartPulse,
-  ShoppingBag,
-  GraduationCap,
-  Landmark,
-  Truck,
- Layers3,
-  CreditCard,
-  BrainCircuit,
-  Workflow,
-  Smartphone,
-  BarChart3,
-} from "lucide-react";
 
 const services = [
   {
-    icon: Rocket,
     title: "Custom SaaS Development",
     description:
-      "Build secure, scalable and cloud-native SaaS applications tailored to your business requirements.",
+      "Develop secure and scalable Software as a Service platforms tailored to business requirements and long term growth.",
   },
   {
-    icon: Layers3,
-    title: "MVP Development",
+    title: "Multi Tenant SaaS",
     description:
-      "Launch your SaaS startup quickly with a scalable MVP built for rapid validation.",
+      "Build efficient multi tenant SaaS architecture that supports thousands of users from a single platform.",
   },
   {
-    icon: Database,
-    title: "CRM & ERP Solutions",
+    title: "Cloud SaaS Solutions",
     description:
-      "Automate business workflows using intelligent CRM and ERP software.",
+      "Create cloud native SaaS applications with excellent scalability, security, and performance.",
   },
   {
-    icon: CreditCard,
-    title: "Subscription Platforms",
+    title: "SaaS Product Development",
     description:
-      "Recurring billing, payment gateway integration and subscription management.",
+      "Transform business ideas into modern SaaS products using proven development practices.",
   },
   {
-    icon: Cloud,
-    title: "Cloud Migration",
+    title: "API Integration",
     description:
-      "Move legacy software to modern cloud infrastructure with zero compromise.",
+      "Connect SaaS platforms with payment gateways, CRM systems, ERP software, and third party services.",
   },
   {
-    icon: BrainCircuit,
-    title: "AI SaaS Solutions",
+    title: "SaaS Modernization",
     description:
-      "Integrate Artificial Intelligence to automate business operations.",
+      "Upgrade existing SaaS products with improved security, performance, and modern technology.",
   },
 ];
 
 const benefits = [
   {
-    icon: Rocket,
-    title: "Rapid Development",
+    title: "Cloud Ready",
     description:
-      "Fast development using modern technologies and agile methodology.",
+      "Modern cloud architecture designed for reliability and business growth.",
   },
   {
-    icon: Cloud,
-    title: "Cloud Native",
+    title: "Highly Scalable",
     description:
-      "Highly scalable cloud architecture built for future business growth.",
+      "Support growing businesses with software built for thousands of users.",
   },
   {
-    icon: ShieldCheck,
     title: "Enterprise Security",
     description:
-      "Secure authentication, encrypted data and industry best practices.",
+      "Protect business information using modern security standards.",
   },
   {
-    icon: Users,
-    title: "User-Centric Design",
+    title: "Fast Performance",
     description:
-      "Beautiful UI/UX focused on engagement and customer satisfaction.",
+      "Deliver responsive software with optimized application performance.",
   },
   {
-    icon: Code2,
-    title: "Modern Technology",
+    title: "Subscription Ready",
     description:
-      "Future-ready applications powered by the latest development stack.",
+      "Support recurring billing, user management, and subscription services.",
   },
   {
-    icon: CheckCircle,
-    title: "Ongoing Support",
+    title: "Continuous Support",
     description:
-      "Maintenance, updates and technical support after deployment.",
+      "Receive long term maintenance, updates, and performance optimization.",
   },
 ];
 
-export default function SAASDevelopment() {
+export default function SaaSDevelopment() {
   return (
     <>
+
       {/* Hero */}
 
       <section className="relative overflow-hidden bg-white pt-36 pb-24">
+
         <div className="absolute inset-0 -z-10">
-          <div className="absolute left-1/2 top-0 h-[650px] w-[650px] -translate-x-1/2 rounded-full bg-orange-100 blur-3xl opacity-40" />
-          <div className="absolute left-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-3xl" />
-          <div className="absolute right-0 top-20 h-72 w-72 rounded-full bg-orange-50 blur-3xl" />
+
+          <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-orange-100 opacity-40 blur-3xl"></div>
+
+          <div className="absolute left-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-3xl"></div>
+
+          <div className="absolute right-0 top-20 h-72 w-72 rounded-full bg-orange-50 blur-3xl"></div>
+
         </div>
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid items-center gap-16 lg:grid-cols-2">
 
-            {/* Left */}
+          <div className="grid items-center gap-16 lg:grid-cols-2">
 
             <div>
 
@@ -127,33 +97,33 @@ export default function SAASDevelopment() {
               </span>
 
               <h1 className="mt-8 text-5xl font-bold tracking-tight text-gray-900 md:text-6xl">
-                Build Powerful
+                SaaS Development
                 <span className="block text-orange-500">
-                  SaaS Applications
+                  Built For Modern Businesses
                 </span>
-                That Scale With Your Business
               </h1>
 
               <p className="mt-8 text-lg leading-8 text-gray-600">
-                CodeVista Solutions provides custom SaaS development services,
-                cloud software development, enterprise SaaS solutions and MVP
-                development that help startups and businesses launch scalable
-                digital products.
+                CodeVista Solutions develops secure and scalable Software as a
+                Service platforms, cloud applications, multi tenant SaaS
+                products, subscription software, enterprise SaaS solutions,
+                customer portals, and business management platforms that help
+                organizations grow faster and deliver exceptional digital
+                experiences.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
 
                 <Link
                   href="/contact"
-                  className="inline-flex items-center rounded-xl bg-orange-500 px-7 py-4 font-semibold text-white transition hover:bg-orange-600"
+                  className="rounded-xl bg-orange-500 px-8 py-4 font-semibold text-white transition hover:bg-orange-600"
                 >
-                  Start Your Project
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Start Your SaaS Project
                 </Link>
 
                 <Link
                   href="/portfolio"
-                  className="inline-flex items-center rounded-xl border border-gray-300 px-7 py-4 font-semibold text-gray-700 transition hover:border-orange-500 hover:text-orange-500"
+                  className="rounded-xl border border-gray-300 px-8 py-4 font-semibold text-gray-700 transition hover:border-orange-500 hover:text-orange-500"
                 >
                   View Portfolio
                 </Link>
@@ -163,18 +133,25 @@ export default function SAASDevelopment() {
               <div className="mt-12 grid gap-4 sm:grid-cols-2">
 
                 {[
-                  "Cloud Native Architecture",
-                  "Multi-Tenant SaaS",
-                  "AI Integration",
-                  "Subscription Billing",
+                  "Cloud SaaS",
+                  "Multi Tenant Architecture",
+                  "Subscription Platform",
+                  "Enterprise SaaS",
                 ].map((item) => (
+
                   <div
                     key={item}
                     className="flex items-center gap-3"
                   >
-                    <CheckCircle className="h-5 w-5 text-orange-500" />
-                    <span className="text-gray-700">{item}</span>
+
+                    <div className="h-3 w-3 rounded-full bg-orange-500"></div>
+
+                    <span className="text-gray-700">
+                      {item}
+                    </span>
+
                   </div>
+
                 ))}
 
               </div>
@@ -188,71 +165,86 @@ export default function SAASDevelopment() {
               <div className="flex items-center justify-between border-b pb-6">
 
                 <div>
-                  <h3 className="text-xl font-bold">
+
+                  <h3 className="text-xl font-bold text-gray-900">
                     SaaS Analytics
                   </h3>
 
                   <p className="text-sm text-gray-500">
-                    Live Dashboard
+                    Platform Performance
                   </p>
+
                 </div>
 
-                <div className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-600">
-                  Online
-                </div>
+                <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700">
+                  Live
+                </span>
 
               </div>
 
               <div className="mt-8 grid grid-cols-2 gap-5">
 
                 {[
-                  ["Users", "12.8K"],
-                  ["Revenue", "$84K"],
-                  ["API Calls", "2.3M"],
-                  ["Uptime", "99.99%"],
+                  ["Active Users", "50K+"],
+                  ["Availability", "99.9%"],
+                  ["Performance", "98%"],
+                  ["Growth", "4.5X"],
                 ].map(([title, value]) => (
+
                   <div
                     key={title}
                     className="rounded-2xl bg-gray-50 p-5"
                   >
+
                     <p className="text-sm text-gray-500">
                       {title}
                     </p>
 
-                    <h3 className="mt-2 text-3xl font-bold">
+                    <h3 className="mt-2 text-3xl font-bold text-gray-900">
                       {value}
                     </h3>
+
                   </div>
+
                 ))}
 
               </div>
 
               <div className="mt-8 rounded-2xl bg-orange-50 p-6">
 
-                <h4 className="font-semibold">
-                  Platform Performance
+                <h4 className="font-semibold text-gray-900">
+                  Platform Health
                 </h4>
 
                 <div className="mt-6 space-y-5">
 
                   {[
-                    ["Speed", "98%"],
-                    ["Security", "100%"],
-                    ["Customer Satisfaction", "99%"],
+                    ["Security", "99%"],
+                    ["Scalability", "98%"],
+                    ["Customer Satisfaction", "97%"],
                   ].map(([label, value]) => (
+
                     <div key={label}>
+
                       <div className="mb-2 flex justify-between text-sm">
+
                         <span>{label}</span>
+
                         <span>{value}</span>
+
                       </div>
 
                       <div className="h-2 rounded-full bg-orange-100">
+
                         <div
                           className="h-2 rounded-full bg-orange-500"
                           style={{ width: value }}
-                        />
+                        ></div>
+
                       </div>
+
                     </div>
+
                   ))}
 
                 </div>
@@ -262,31 +254,30 @@ export default function SAASDevelopment() {
             </div>
 
           </div>
+
         </div>
+
       </section>
-            {/* Services */}
+            {/* Statistics */}
 
-      <section className="relative overflow-hidden bg-gray-50 py-24">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-orange-100 blur-3xl opacity-40" />
-          <div className="absolute right-0 bottom-20 h-72 w-72 rounded-full bg-orange-50 blur-3xl opacity-50" />
-        </div>
+      <section className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           <div className="grid gap-6 md:grid-cols-4">
 
             {[
-              ["100+", "Projects Delivered"],
-              ["99.9%", "Cloud Uptime"],
+              ["200+", "SaaS Projects"],
+              ["99.9%", "Platform Availability"],
+              ["99%", "Client Satisfaction"],
               ["24/7", "Technical Support"],
-              ["98%", "Client Satisfaction"],
             ].map(([value, label]) => (
+
               <div
                 key={label}
-                className="rounded-3xl border border-gray-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+                className="rounded-3xl border border-gray-200 bg-white p-8 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
+
                 <h3 className="text-4xl font-bold text-orange-500">
                   {value}
                 </h3>
@@ -296,56 +287,64 @@ export default function SAASDevelopment() {
                 </p>
 
               </div>
+
             ))}
 
           </div>
 
-          <div className="mx-auto mt-24 max-w-3xl text-center">
+        </div>
+
+      </section>
+
+      {/* SaaS Services */}
+
+      <section className="bg-white py-24">
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+          <div className="mx-auto max-w-3xl text-center">
 
             <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
-              Our SaaS Development Services
+              SaaS Development Services
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Complete SaaS Development Solutions
+              Complete Software As A Service Development
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We build secure, cloud-native SaaS platforms for startups,
-              enterprises, and growing businesses. From MVPs to enterprise
-              software, our development team delivers scalable solutions built
-              for long-term success.
+              CodeVista Solutions develops secure, scalable, and cloud native
+              Software as a Service platforms that support subscription
+              businesses, enterprise operations, customer management,
+              automation, and long term business growth.
             </p>
 
           </div>
 
           <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-            {services.map((service) => {
-              const Icon = service.icon;
+            {services.map((service) => (
 
-              return (
-                <div
-                  key={service.title}
-                  className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
-                >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100 transition group-hover:bg-orange-500">
+              <div
+                key={service.title}
+                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:bg-white hover:shadow-xl"
+              >
 
-                    <Icon className="h-8 w-8 text-orange-500 group-hover:text-white" />
-
-                  </div>
-
-                  <h3 className="mt-8 text-2xl font-bold text-gray-900">
-                    {service.title}
-                  </h3>
-
-                  <p className="mt-4 leading-7 text-gray-600">
-                    {service.description}
-                  </p>
-
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500 text-lg font-bold text-white">
+                  SA
                 </div>
-              );
-            })}
+
+                <h3 className="mt-8 text-2xl font-bold text-gray-900">
+                  {service.title}
+                </h3>
+
+                <p className="mt-5 leading-8 text-gray-600">
+                  {service.description}
+                </p>
+
+              </div>
+
+            ))}
 
           </div>
 
@@ -355,7 +354,7 @@ export default function SAASDevelopment() {
 
       {/* Why Choose Us */}
 
-      <section className="bg-white py-24">
+      <section className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
@@ -366,44 +365,60 @@ export default function SAASDevelopment() {
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Your Trusted SaaS Development Partner
+              Trusted SaaS Development Company
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We combine modern technologies, scalable architecture, and
-              business-focused development strategies to build SaaS products
-              that help companies grow faster.
+              Our SaaS development team builds secure, cloud based software
+              platforms that deliver outstanding performance, modern user
+              experiences, enterprise security, and long term scalability for
+              businesses of every size.
             </p>
 
           </div>
 
           <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-            {benefits.map((benefit) => {
-              const Icon = benefit.icon;
+            {benefits.map((benefit) => (
 
-              return (
-                <div
-                  key={benefit.title}
-                  className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
-                >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100 transition group-hover:bg-orange-500">
+              <div
+                key={benefit.title}
+                className="rounded-3xl border border-gray-200 bg-white p-8 transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
+              >
 
-                    <Icon className="h-8 w-8 text-orange-500 group-hover:text-white" />
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-100">
 
-                  </div>
-
-                  <h3 className="mt-8 text-2xl font-bold text-gray-900">
-                    {benefit.title}
-                  </h3>
-
-                  <p className="mt-4 leading-7 text-gray-600">
-                    {benefit.description}
-                  </p>
+                  <div className="h-4 w-4 rounded-full bg-orange-500"></div>
 
                 </div>
-              );
-            })}
+
+                <h3 className="mt-8 text-2xl font-bold text-gray-900">
+                  {benefit.title}
+                </h3>
+
+                <p className="mt-5 leading-8 text-gray-600">
+                  {benefit.description}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+          <div className="mt-20 rounded-[32px] bg-gradient-to-r from-orange-500 to-orange-600 p-12 text-center text-white">
+
+            <h3 className="text-3xl font-bold md:text-4xl">
+              Launch A SaaS Platform Built For Growth
+            </h3>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-orange-100">
+              From subscription software and enterprise SaaS platforms to cloud
+              applications, customer portals, business automation, and scalable
+              Software as a Service products, CodeVista Solutions develops
+              powerful SaaS platforms that support sustainable business growth
+              and exceptional customer experiences.
+            </p>
 
           </div>
 
@@ -412,83 +427,72 @@ export default function SAASDevelopment() {
       </section>
             {/* Development Process */}
 
-      <section className="relative overflow-hidden bg-gray-50 py-24">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-orange-100 blur-3xl opacity-40" />
-          <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-3xl opacity-50" />
-        </div>
+      <section className="bg-white py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           <div className="mx-auto max-w-3xl text-center">
 
             <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
-              Our Development Process
+              SaaS Development Process
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              A Proven Process For Successful SaaS Development
+              Structured Development For Modern SaaS Platforms
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Every SaaS application is developed using a structured workflow
-              focused on scalability, security, performance, and long term
-              business growth.
+              Every Software as a Service platform follows a structured
+              development process focused on scalability, cloud architecture,
+              performance, security, and long term business success.
             </p>
 
           </div>
 
-          <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
 
             {[
-              [
-                "01",
-                "Discovery",
-                "Understanding business goals, target audience and product vision."
-              ],
-              [
-                "02",
-                "Planning",
-                "Creating architecture, roadmap and scalable technical strategy."
-              ],
-              [
-                "03",
-                "UI UX Design",
-                "Designing intuitive interfaces with excellent user experience."
-              ],
-              [
-                "04",
-                "Development",
-                "Building secure frontend, backend, APIs and cloud infrastructure."
-              ],
-              [
-                "05",
-                "Testing",
-                "Quality assurance, performance optimization and security testing."
-              ],
-              [
-                "06",
-                "Deployment",
-                "Launching your SaaS product with continuous monitoring and support."
-              ],
-            ].map(([step, title, description]) => (
+              {
+                step: "01",
+                title: "Business Discovery",
+                description:
+                  "Understand business goals, customer requirements, subscription model, and platform objectives.",
+              },
+              {
+                step: "02",
+                title: "Architecture Planning",
+                description:
+                  "Design secure cloud architecture, database structure, user management, and scalable infrastructure.",
+              },
+              {
+                step: "03",
+                title: "Platform Development",
+                description:
+                  "Develop responsive SaaS applications with modern technologies and secure cloud deployment.",
+              },
+              {
+                step: "04",
+                title: "Launch And Growth",
+                description:
+                  "Deploy, monitor, optimize, and continuously improve platform performance and customer experience.",
+              },
+            ].map((item) => (
 
               <div
-                key={step}
-                className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+                key={item.step}
+                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition hover:-translate-y-2 hover:bg-white hover:shadow-xl"
               >
 
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-orange-500 text-xl font-bold text-white">
-                  {step}
+                  {item.step}
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                  {title}
+                <h3 className="mt-8 text-2xl font-bold text-gray-900">
+                  {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">
-                  {description}
+                <p className="mt-5 leading-8 text-gray-600">
+                  {item.description}
                 </p>
 
               </div>
@@ -501,88 +505,108 @@ export default function SAASDevelopment() {
 
       </section>
 
-      {/* Technology Stack */}
+      {/* SaaS Features */}
 
-      <section className="bg-white py-24">
+      <section className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="grid items-center gap-16 lg:grid-cols-2">
 
-            <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
-              Technology Stack
-            </span>
+            <div>
 
-            <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Modern Technologies For Scalable SaaS Applications
-            </h2>
+              <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
+                Modern SaaS Features
+              </span>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We use proven technologies to develop secure, cloud based SaaS
-              platforms with excellent performance and long term scalability.
-            </p>
+              <h2 className="mt-8 text-4xl font-bold text-gray-900 md:text-5xl">
+                Everything Needed For A Successful SaaS Platform
+              </h2>
 
-          </div>
+              <p className="mt-8 text-lg leading-8 text-gray-600">
+                CodeVista Solutions develops Software as a Service platforms
+                with subscription management, secure authentication, cloud
+                infrastructure, payment integration, analytics dashboards,
+                automation, and enterprise level performance.
+              </p>
 
-          <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-10 space-y-5">
 
-            {[
-              {
-                icon: Code2,
-                title: "Frontend",
-                items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-              },
-              {
-                icon: Cpu,
-                title: "Backend",
-                items: ["Node.js", "Express", "Python", "FastAPI"],
-              },
-              {
-                icon: Database,
-                title: "Database",
-                items: ["PostgreSQL", "MongoDB", "Redis", "Firebase"],
-              },
-              {
-                icon: Cloud,
-                title: "Cloud",
-                items: ["AWS", "Docker", "Vercel", "Cloudflare"],
-              },
-            ].map((stack) => {
-              const Icon = stack.icon;
+                {[
+                  "Multi Tenant Architecture",
+                  "Subscription Management",
+                  "Secure User Authentication",
+                  "Cloud Infrastructure",
+                  "Payment Gateway Integration",
+                  "Business Analytics Dashboard",
+                  "API Integration",
+                  "Scalable Platform Architecture",
+                ].map((item) => (
 
-              return (
-                <div
-                  key={stack.title}
-                  className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition hover:-translate-y-2 hover:shadow-xl"
-                >
+                  <div
+                    key={item}
+                    className="flex items-center gap-4"
+                  >
 
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100">
-                    <Icon className="h-8 w-8 text-orange-500" />
+                    <div className="h-3 w-3 rounded-full bg-orange-500"></div>
+
+                    <span className="text-lg text-gray-700">
+                      {item}
+                    </span>
+
                   </div>
 
-                  <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                    {stack.title}
-                  </h3>
+                ))}
 
-                  <ul className="mt-6 space-y-3">
+              </div>
 
-                    {stack.items.map((item) => (
+            </div>
 
-                      <li
-                        key={item}
-                        className="flex items-center gap-3 text-gray-600"
-                      >
-                        <CheckCircle className="h-5 w-5 text-orange-500" />
-                        {item}
-                      </li>
+            <div className="rounded-[32px] border border-gray-200 bg-white p-10 shadow-xl">
 
-                    ))}
+              <h3 className="text-3xl font-bold text-gray-900">
+                Platform Performance
+              </h3>
 
-                  </ul>
+              <div className="mt-10 space-y-8">
 
-                </div>
-              );
-            })}
+                {[
+                  ["Cloud Availability", "99.9%"],
+                  ["Application Performance", "98%"],
+                  ["Platform Security", "99%"],
+                  ["Customer Satisfaction", "97%"],
+                ].map(([label, value]) => (
+
+                  <div key={label}>
+
+                    <div className="mb-2 flex justify-between">
+
+                      <span className="font-medium text-gray-700">
+                        {label}
+                      </span>
+
+                      <span className="font-bold text-orange-500">
+                        {value}
+                      </span>
+
+                    </div>
+
+                    <div className="h-3 rounded-full bg-orange-100">
+
+                      <div
+                        className="h-3 rounded-full bg-orange-500"
+                        style={{ width: value }}
+                      ></div>
+
+                    </div>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            </div>
 
           </div>
 
@@ -592,7 +616,7 @@ export default function SAASDevelopment() {
 
       {/* Industries */}
 
-      <section className="bg-gray-50 py-24">
+      <section className="bg-white py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
@@ -602,34 +626,44 @@ export default function SAASDevelopment() {
               Industries We Serve
             </span>
 
-            <h2 className="mt-6 text-4xl font-bold text-gray-900">
-              SaaS Solutions For Every Industry
+            <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
+              SaaS Development Solutions For Every Industry
             </h2>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+              Our SaaS development services help organizations launch secure,
+              scalable, and cloud based software platforms for subscription
+              businesses, enterprise operations, and digital transformation.
+            </p>
 
           </div>
 
-          <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 
             {[
-              [HeartPulse, "Healthcare"],
-              [ShoppingBag, "E Commerce"],
-              [Landmark, "Finance"],
-              [GraduationCap, "Education"],
-              [Truck, "Logistics"],
-              [Building2, "Real Estate"],
-            ].map(([Icon, title], index) => (
-              <div
-                key={index}
-                className="rounded-3xl border border-gray-200 bg-white p-8 text-center transition hover:-translate-y-2 hover:shadow-xl"
-              >
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-orange-100">
-                  <Icon className="h-8 w-8 text-orange-500" />
-                </div>
+              "Healthcare",
+              "Finance",
+              "Education",
+              "Electronic Commerce",
+              "Manufacturing",
+              "Real Estate",
+              "Logistics",
+              "Professional Services",
+            ].map((industry) => (
 
-                <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                  {title}
+              <div
+                key={industry}
+                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 text-center transition hover:-translate-y-2 hover:bg-white hover:shadow-xl"
+              >
+
+                <div className="mx-auto h-16 w-16 rounded-full bg-orange-500"></div>
+
+                <h3 className="mt-6 text-xl font-bold text-gray-900">
+                  {industry}
                 </h3>
+
               </div>
+
             ))}
 
           </div>
@@ -639,7 +673,7 @@ export default function SAASDevelopment() {
       </section>
             {/* FAQ */}
 
-      <section className="bg-white py-24">
+      <section className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
@@ -650,13 +684,14 @@ export default function SAASDevelopment() {
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              SaaS Development Questions
+              SaaS Development FAQ
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-              Find answers to common questions about custom SaaS development,
-              cloud software, MVP development, pricing, timelines, and ongoing
-              support from CodeVista Solutions.
+              Learn more about Software as a Service development, cloud
+              platforms, subscription software, enterprise SaaS, platform
+              security, project timelines, and long term support from
+              CodeVista Solutions.
             </p>
 
           </div>
@@ -665,43 +700,43 @@ export default function SAASDevelopment() {
 
             {[
               {
-                question: "What is SaaS development?",
+                question: "What is Software as a Service development?",
                 answer:
-                  "SaaS development is the process of creating cloud based software applications that users access through a web browser without installing software on their devices.",
+                  "Software as a Service development creates cloud based software that users can securely access through a web browser using subscription based access.",
               },
               {
-                question: "How much does custom SaaS development cost?",
+                question: "Can you build a custom SaaS platform?",
                 answer:
-                  "The cost depends on project complexity, required features, integrations, user roles, and deployment requirements. Every project receives a customized quotation.",
+                  "Yes. We develop custom SaaS platforms designed around business requirements, customer experience, subscription management, and long term scalability.",
               },
               {
-                question: "How long does SaaS development take?",
+                question: "Do you develop multi tenant SaaS platforms?",
                 answer:
-                  "Most MVP projects take between eight and sixteen weeks while enterprise SaaS platforms require additional development depending on functionality.",
+                  "Yes. We build secure multi tenant SaaS architecture that supports multiple customers from one platform while maintaining data isolation and performance.",
               },
               {
-                question: "Can you upgrade an existing SaaS application?",
+                question: "Can existing software be converted into SaaS?",
                 answer:
-                  "Yes. We modernize existing SaaS applications, improve performance, redesign user interfaces, migrate to cloud infrastructure, and add new features.",
+                  "Yes. We modernize traditional software and transform existing business applications into secure cloud based Software as a Service platforms.",
               },
               {
-                question: "Do you provide maintenance and support?",
+                question: "Do you provide maintenance after deployment?",
                 answer:
-                  "Yes. We provide continuous maintenance, monitoring, feature updates, bug fixes, performance optimization, and technical support after deployment.",
+                  "Yes. We provide continuous platform maintenance, security updates, performance optimization, feature development, monitoring, and technical support.",
               },
               {
-                question: "Which industries do you work with?",
+                question: "Which industries benefit from SaaS platforms?",
                 answer:
-                  "We develop SaaS solutions for healthcare, education, finance, logistics, ecommerce, manufacturing, real estate, and many other industries.",
+                  "Healthcare, finance, education, manufacturing, logistics, electronic commerce, real estate, and professional services benefit from scalable SaaS platforms.",
               },
             ].map((faq) => (
 
               <div
                 key={faq.question}
-                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition hover:shadow-lg"
+                className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition hover:shadow-xl"
               >
 
-                <h3 className="text-xl font-bold text-gray-900">
+                <h3 className="text-2xl font-bold text-gray-900">
                   {faq.question}
                 </h3>
 
@@ -725,46 +760,45 @@ export default function SAASDevelopment() {
 
         <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600"></div>
 
-        <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-white opacity-10 blur-3xl"></div>
+        <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
 
-        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-white opacity-10 blur-3xl"></div>
+        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
 
           <div className="mx-auto max-w-4xl text-center">
 
             <span className="rounded-full bg-white/20 px-5 py-2 text-sm font-semibold text-white">
-              Start Your SaaS Journey
+              Launch A Scalable SaaS Platform
             </span>
 
             <h2 className="mt-8 text-4xl font-bold text-white md:text-6xl">
-              Build A Powerful SaaS Product That Grows With Your Business
+              Build Powerful Software As A Service Solutions
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-orange-100">
-              CodeVista Solutions delivers custom SaaS development services,
-              cloud software development, enterprise SaaS platforms, AI powered
-              applications, CRM solutions, ERP software, and scalable digital
-              products designed for long term success.
+              CodeVista Solutions develops secure Software as a Service
+              platforms, cloud applications, enterprise SaaS products,
+              subscription software, multi tenant architecture, customer
+              portals, business management platforms, and scalable cloud
+              solutions that improve efficiency, support business growth,
+              and deliver exceptional customer experiences.
             </p>
 
             <div className="mt-12 flex flex-wrap justify-center gap-5">
 
               <Link
                 href="/contact"
-                className="inline-flex items-center rounded-xl bg-white px-8 py-4 font-semibold text-orange-600 transition hover:bg-gray-100"
+                className="rounded-xl bg-white px-8 py-4 font-semibold text-orange-600 transition hover:bg-orange-100"
               >
-                Get Free Consultation
-
-                <ArrowRight className="ml-2 h-5 w-5" />
-
+                Start Your SaaS Project
               </Link>
 
               <Link
-                href="/about"
-                className="inline-flex items-center rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-orange-600"
+                href="/our-services"
+                className="rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-orange-600"
               >
-                Learn More About Us
+                Explore Our Services
               </Link>
 
             </div>
