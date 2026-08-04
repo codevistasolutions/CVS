@@ -14,42 +14,49 @@ import {
 const services = [
   {
     title: "Website Development",
-    href: "/services/WebsiteDevelopment",
+    href: "/WebsiteDevelopment",
     icon: Globe,
     description:
       "Modern, SEO-optimized websites built with Next.js, React and the latest web technologies to help your business grow online.",
   },
   {
     title: "ERP Development",
-    href: "/services/ERPDevelopment",
+    href: "/ERPDevelopment",
     icon: Database,
     description:
       "Custom ERP solutions that automate inventory, HR, finance, operations and business workflows.",
   },
   {
     title: "CRM Development",
-    href: "/services/CRMDevelopment",
+    href: "/CRMDevelopment",
     icon: Users,
     description:
       "Powerful CRM systems to manage leads, customers, sales pipelines and support from one place.",
   },
   {
     title: "SaaS Development",
-    href: "/services/SAASDevelopment",
+    href: "/SAASDevelopment",
     icon: Cloud,
     description:
       "Scalable cloud-based SaaS applications with secure architecture and subscription-ready features.",
   },
   {
     title: "AI Solutions",
-    href: "/services/AISolutions",
+    href: "/AISolutions",
     icon: Bot,
     description:
       "AI chatbots, intelligent automation and business solutions powered by modern artificial intelligence.",
   },
   {
     title: "Custom Software",
-    href: "/services/CustomSoftware",
+    href: "/CustomSoftware",
+    icon: Settings,
+    description:
+      "Tailor-made software engineered specifically for your business goals, processes and future growth.",
+  },
+  {
+    title: "Digital Marketing",
+    href: "/DigitalMarketing",
     icon: Settings,
     description:
       "Tailor-made software engineered specifically for your business goals, processes and future growth.",
