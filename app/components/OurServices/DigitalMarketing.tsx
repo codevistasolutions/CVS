@@ -1,120 +1,79 @@
 "use client";
 
 import Link from "next/link";
-import {
-  ArrowRight,
-  CheckCircle,
-  Search,
-  TrendingUp,
-  BarChart3,
-  Globe,
-  Target,
-  Megaphone,
-  Users,
-  LineChart,
-  ShieldCheck,
-  Rocket,
-  Instagram,
-  MousePointerClick,
-  Mail,
-  Building2,
-  HeartPulse,
-  ShoppingBag,
-  GraduationCap,
-  Landmark,
-  Truck,
-  Factory,
-} from "lucide-react";
 
 const services = [
   {
-    icon: Search,
     title: "Search Engine Optimization",
     description:
-      "Improve organic search rankings, website visibility, and qualified traffic with advanced SEO strategies.",
+      "Improve search rankings, increase organic traffic, and generate qualified leads with professional SEO services.",
   },
   {
-    icon: MousePointerClick,
     title: "Google Ads Management",
     description:
-      "Generate high quality leads using optimized Google Ads campaigns focused on measurable return on investment.",
+      "Create and optimize Google Ads campaigns that deliver measurable business growth and qualified leads.",
   },
   {
-    icon: Instagram,
     title: "Social Media Marketing",
     description:
-      "Build brand awareness, engage audiences, and increase conversions across leading social media platforms.",
+      "Build brand awareness, increase engagement, and grow your audience across leading social media platforms.",
   },
   {
-    icon: Target,
     title: "Performance Marketing",
     description:
-      "Run data driven advertising campaigns that maximize conversions and marketing performance.",
+      "Use data driven advertising strategies focused on conversions and business growth.",
   },
   {
-    icon: Globe,
     title: "Local SEO",
     description:
-      "Increase local visibility through Google Business Profile optimization and location focused SEO strategies.",
+      "Increase visibility in local search results through Google Business Profile optimization and local SEO.",
   },
   {
-    icon: Mail,
-    title: "Content And Email Marketing",
+    title: "Content Marketing",
     description:
-      "Build customer relationships using valuable content, email campaigns, and personalized communication.",
+      "Publish valuable content that attracts customers and strengthens brand authority.",
   },
 ];
 
 const benefits = [
   {
-    icon: TrendingUp,
-    title: "Business Growth",
-    description:
-      "Increase qualified leads, website traffic, and customer acquisition through proven marketing strategies.",
+    title: "More Website Traffic",
+    description: "Increase qualified visitors through search engine optimization.",
   },
   {
-    icon: BarChart3,
-    title: "Data Driven Decisions",
-    description:
-      "Track campaign performance with detailed analytics and continuous optimization.",
+    title: "Higher Lead Generation",
+    description: "Generate consistent leads through optimized marketing campaigns.",
   },
   {
-    icon: Rocket,
-    title: "Higher Return On Investment",
-    description:
-      "Optimize every campaign to improve conversions while reducing unnecessary advertising costs.",
+    title: "Better Return On Investment",
+    description: "Maximize marketing performance while reducing wasted advertising spend.",
   },
   {
-    icon: Users,
-    title: "Audience Targeting",
-    description:
-      "Reach the right customers through intelligent audience research and campaign optimization.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Trusted Marketing Partner",
-    description:
-      "Transparent reporting, measurable performance, and long term marketing support.",
-  },
-  {
-    icon: Megaphone,
     title: "Brand Visibility",
-    description:
-      "Strengthen online presence through consistent digital marketing across multiple channels.",
+    description: "Build a strong online presence across multiple digital channels.",
+  },
+  {
+    title: "Transparent Reporting",
+    description: "Receive detailed monthly reports with measurable marketing insights.",
+  },
+  {
+    title: "Long Term Growth",
+    description: "Create sustainable marketing strategies that continue delivering results.",
   },
 ];
 
 export default function DigitalMarketing() {
   return (
     <>
+
       {/* Hero */}
 
       <section className="relative overflow-hidden bg-white pt-36 pb-24">
 
         <div className="absolute inset-0 -z-10">
-          <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-orange-100 blur-3xl opacity-40" />
-          <div className="absolute left-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-3xl" />
-          <div className="absolute right-0 top-20 h-72 w-72 rounded-full bg-orange-50 blur-3xl" />
+          <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-orange-100 blur-3xl opacity-40"></div>
+          <div className="absolute left-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-3xl"></div>
+          <div className="absolute right-0 top-16 h-72 w-72 rounded-full bg-orange-50 blur-3xl"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -132,36 +91,32 @@ export default function DigitalMarketing() {
               <h1 className="mt-8 text-5xl font-bold tracking-tight text-gray-900 md:text-6xl">
                 Digital Marketing
                 <span className="block text-orange-500">
-                  That Delivers Real Business Growth
+                  Services That Drive Business Growth
                 </span>
               </h1>
 
               <p className="mt-8 text-lg leading-8 text-gray-600">
-                CodeVista Solutions provides digital marketing services that
-                help businesses improve online visibility, generate qualified
-                leads, increase website traffic, strengthen brand awareness,
-                and achieve sustainable growth through search engine
-                optimization, Google Ads, social media marketing, local SEO,
-                and performance marketing.
+                CodeVista Solutions provides professional digital marketing
+                services including search engine optimization, Google Ads,
+                social media marketing, local SEO, content marketing,
+                performance marketing, and lead generation strategies that help
+                businesses increase online visibility and generate more revenue.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
 
                 <Link
                   href="/contact"
-                  className="inline-flex items-center rounded-xl bg-orange-500 px-7 py-4 font-semibold text-white transition hover:bg-orange-600"
+                  className="rounded-xl bg-orange-500 px-8 py-4 font-semibold text-white transition hover:bg-orange-600"
                 >
-                  Grow My Business
-
-                  <ArrowRight className="ml-2 h-5 w-5" />
-
+                  Get Free Consultation
                 </Link>
 
                 <Link
                   href="/portfolio"
-                  className="inline-flex items-center rounded-xl border border-gray-300 px-7 py-4 font-semibold text-gray-700 transition hover:border-orange-500 hover:text-orange-500"
+                  className="rounded-xl border border-gray-300 px-8 py-4 font-semibold text-gray-700 transition hover:border-orange-500 hover:text-orange-500"
                 >
-                  View Success Stories
+                  View Portfolio
                 </Link>
 
               </div>
@@ -180,7 +135,7 @@ export default function DigitalMarketing() {
                     className="flex items-center gap-3"
                   >
 
-                    <CheckCircle className="h-5 w-5 text-orange-500" />
+                    <div className="h-3 w-3 rounded-full bg-orange-500"></div>
 
                     <span className="text-gray-700">
                       {item}
@@ -203,28 +158,28 @@ export default function DigitalMarketing() {
                 <div>
 
                   <h3 className="text-xl font-bold text-gray-900">
-                    Marketing Analytics
+                    Marketing Dashboard
                   </h3>
 
                   <p className="text-sm text-gray-500">
-                    Live Campaign Dashboard
+                    Campaign Analytics
                   </p>
 
                 </div>
 
-                <div className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-600">
-                  Active Campaigns
-                </div>
+                <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700">
+                  Active
+                </span>
 
               </div>
 
               <div className="mt-8 grid grid-cols-2 gap-5">
 
                 {[
-                  ["Organic Traffic", "+285%"],
-                  ["Qualified Leads", "1240"],
-                  ["Conversion Rate", "8.6%"],
-                  ["Return On Investment", "5.4X"],
+                  ["Organic Traffic", "+320%"],
+                  ["Qualified Leads", "1450"],
+                  ["Conversion Rate", "9.2%"],
+                  ["Return", "5.8X"],
                 ].map(([title, value]) => (
 
                   <div
@@ -255,9 +210,9 @@ export default function DigitalMarketing() {
                 <div className="mt-6 space-y-5">
 
                   {[
-                    ["SEO Growth", "96%"],
+                    ["SEO Performance", "96%"],
                     ["Lead Quality", "94%"],
-                    ["Customer Engagement", "98%"],
+                    ["Customer Growth", "98%"],
                   ].map(([label, value]) => (
 
                     <div key={label}>
@@ -275,7 +230,7 @@ export default function DigitalMarketing() {
                         <div
                           className="h-2 rounded-full bg-orange-500"
                           style={{ width: value }}
-                        />
+                        ></div>
 
                       </div>
 
@@ -294,29 +249,24 @@ export default function DigitalMarketing() {
         </div>
 
       </section>
-            {/* Statistics And Services */}
+            {/* Statistics */}
 
-      <section className="relative overflow-hidden bg-gray-50 py-24">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-orange-100 blur-3xl opacity-40" />
-          <div className="absolute right-0 bottom-20 h-72 w-72 rounded-full bg-orange-50 blur-3xl opacity-50" />
-        </div>
+      <section className="relative bg-gray-50 py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           <div className="grid gap-6 md:grid-cols-4">
 
             {[
-              ["500+", "Marketing Campaigns"],
+              ["500+", "Successful Campaigns"],
               ["98%", "Client Satisfaction"],
               ["350%", "Average Traffic Growth"],
-              ["24/7", "Campaign Support"],
+              ["24/7", "Marketing Support"],
             ].map(([value, label]) => (
 
               <div
                 key={label}
-                className="rounded-3xl border border-gray-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+                className="rounded-3xl border border-gray-200 bg-white p-8 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
 
                 <h3 className="text-4xl font-bold text-orange-500">
@@ -333,67 +283,11 @@ export default function DigitalMarketing() {
 
           </div>
 
-          <div className="mx-auto mt-24 max-w-3xl text-center">
-
-            <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
-              Digital Marketing Services
-            </span>
-
-            <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Complete Digital Marketing Services For Every Business
-            </h2>
-
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              CodeVista Solutions provides complete digital marketing services
-              including search engine optimization, local SEO, Google Ads,
-              Meta Ads, social media marketing, content marketing, email
-              marketing, online reputation management, conversion rate
-              optimization, and lead generation strategies that help businesses
-              increase visibility, attract qualified customers, and achieve
-              measurable business growth.
-            </p>
-
-          </div>
-
-          <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-
-            {services.map((service) => {
-              const Icon = service.icon;
-
-              return (
-
-                <div
-                  key={service.title}
-                  className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
-                >
-
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100 transition group-hover:bg-orange-500">
-
-                    <Icon className="h-8 w-8 text-orange-500 group-hover:text-white" />
-
-                  </div>
-
-                  <h3 className="mt-8 text-2xl font-bold text-gray-900">
-                    {service.title}
-                  </h3>
-
-                  <p className="mt-4 leading-7 text-gray-600">
-                    {service.description}
-                  </p>
-
-                </div>
-
-              );
-
-            })}
-
-          </div>
-
         </div>
 
       </section>
 
-      {/* Why Choose CodeVista */}
+      {/* Services */}
 
       <section className="bg-white py-24">
 
@@ -402,158 +296,41 @@ export default function DigitalMarketing() {
           <div className="mx-auto max-w-3xl text-center">
 
             <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
-              Why Choose CodeVista Solutions
+              Digital Marketing Services
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Trusted Digital Marketing Agency Focused On Results
+              Complete Online Marketing Solutions
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We combine search engine optimization, paid advertising,
-              performance marketing, content strategy, social media management,
-              analytics, and conversion optimization to help businesses improve
-              online visibility, generate qualified leads, increase sales, and
-              build long term brand authority.
+              Our digital marketing services help businesses improve search
+              rankings, increase website traffic, generate qualified leads,
+              improve conversion rates, and strengthen online brand visibility
+              through customized marketing strategies.
             </p>
 
           </div>
 
           <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-            {benefits.map((benefit) => {
-              const Icon = benefit.icon;
-
-              return (
-
-                <div
-                  key={benefit.title}
-                  className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
-                >
-
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100 transition group-hover:bg-orange-500">
-
-                    <Icon className="h-8 w-8 text-orange-500 group-hover:text-white" />
-
-                  </div>
-
-                  <h3 className="mt-8 text-2xl font-bold text-gray-900">
-                    {benefit.title}
-                  </h3>
-
-                  <p className="mt-4 leading-7 text-gray-600">
-                    {benefit.description}
-                  </p>
-
-                </div>
-
-              );
-
-            })}
-
-          </div>
-
-          <div className="mt-20 rounded-[32px] bg-gradient-to-r from-orange-500 to-orange-600 p-10 text-center text-white shadow-2xl">
-
-            <TrendingUp className="mx-auto h-14 w-14" />
-
-            <h3 className="mt-6 text-3xl font-bold">
-              Grow Faster With Strategic Digital Marketing
-            </h3>
-
-            <p className="mx-auto mt-5 max-w-3xl text-lg text-orange-100">
-              From search engine optimization and Google Ads to social media
-              marketing, local SEO, lead generation, content marketing, and
-              performance marketing, CodeVista Solutions delivers measurable
-              digital marketing strategies that increase traffic, generate
-              qualified leads, and accelerate business growth.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-            {/* Marketing Process */}
-
-      <section className="relative overflow-hidden bg-gray-50 py-24">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-orange-100 blur-3xl opacity-40" />
-          <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-3xl opacity-50" />
-        </div>
-
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-
-          <div className="mx-auto max-w-3xl text-center">
-
-            <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
-              Our Digital Marketing Process
-            </span>
-
-            <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Data Driven Marketing That Delivers Measurable Results
-            </h2>
-
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Every digital marketing campaign follows a structured process
-              focused on increasing website traffic, generating qualified
-              leads, improving conversion rates, and maximizing return on
-              investment.
-            </p>
-
-          </div>
-
-          <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-
-            {[
-              [
-                "01",
-                "Business Analysis",
-                "Understand your business goals, competitors, audience, and current online presence."
-              ],
-              [
-                "02",
-                "Marketing Strategy",
-                "Develop a customized digital marketing strategy based on business objectives and market opportunities."
-              ],
-              [
-                "03",
-                "Campaign Launch",
-                "Launch SEO, Google Ads, Meta Ads, and social media marketing campaigns across the right channels."
-              ],
-              [
-                "04",
-                "Content Optimization",
-                "Create optimized landing pages, marketing content, and creative assets that improve engagement."
-              ],
-              [
-                "05",
-                "Performance Tracking",
-                "Monitor rankings, traffic, conversions, advertising performance, and customer behavior."
-              ],
-              [
-                "06",
-                "Continuous Growth",
-                "Optimize campaigns using real time data to improve lead generation and long term business growth."
-              ],
-            ].map(([step, title, description]) => (
+            {services.map((service) => (
 
               <div
-                key={step}
-                className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+                key={service.title}
+                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:bg-white hover:shadow-xl"
               >
 
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-orange-500 text-xl font-bold text-white">
-                  {step}
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500 text-xl font-bold text-white">
+                  DM
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                  {title}
+                <h3 className="mt-8 text-2xl font-bold text-gray-900">
+                  {service.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">
-                  {description}
+                <p className="mt-5 leading-8 text-gray-600">
+                  {service.description}
                 </p>
 
               </div>
@@ -566,7 +343,80 @@ export default function DigitalMarketing() {
 
       </section>
 
-      {/* Marketing Channels */}
+      {/* Why Choose Us */}
+
+      <section className="bg-gray-50 py-24">
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+          <div className="mx-auto max-w-3xl text-center">
+
+            <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
+              Why Choose CodeVista Solutions
+            </span>
+
+            <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
+              Results Driven Digital Marketing Company
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Every marketing campaign is backed by research, analytics,
+              optimization, and continuous improvements. Our objective is to
+              increase traffic, improve visibility, generate qualified leads,
+              and help businesses achieve sustainable growth.
+            </p>
+
+          </div>
+
+          <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+            {benefits.map((benefit) => (
+
+              <div
+                key={benefit.title}
+                className="rounded-3xl border border-gray-200 bg-white p-8 transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
+              >
+
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-100">
+
+                  <div className="h-4 w-4 rounded-full bg-orange-500"></div>
+
+                </div>
+
+                <h3 className="mt-8 text-2xl font-bold text-gray-900">
+                  {benefit.title}
+                </h3>
+
+                <p className="mt-5 leading-8 text-gray-600">
+                  {benefit.description}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+          <div className="mt-20 rounded-[32px] bg-gradient-to-r from-orange-500 to-orange-600 p-12 text-center text-white">
+
+            <h3 className="text-3xl font-bold md:text-4xl">
+              Grow Your Business With Digital Marketing
+            </h3>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-orange-100">
+              CodeVista Solutions provides search engine optimization, Google
+              Ads management, local SEO, social media marketing, content
+              marketing, performance marketing, and lead generation services
+              that help businesses increase online visibility, attract more
+              customers, and grow revenue.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+            {/* Marketing Process */}
 
       <section className="bg-white py-24">
 
@@ -575,17 +425,17 @@ export default function DigitalMarketing() {
           <div className="mx-auto max-w-3xl text-center">
 
             <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
-              Marketing Channels
+              Our Process
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Complete Digital Marketing Solutions
+              Simple Process With Measurable Results
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Our digital marketing experts combine multiple online marketing
-              channels to maximize visibility, generate qualified leads, and
-              increase customer acquisition.
+              Every digital marketing campaign follows a structured approach
+              designed to increase visibility, improve search rankings,
+              generate qualified leads, and maximize business growth.
             </p>
 
           </div>
@@ -594,91 +444,160 @@ export default function DigitalMarketing() {
 
             {[
               {
-                icon: Search,
-                title: "Search Marketing",
-                items: [
-                  "Technical SEO",
-                  "Local SEO",
-                  "Keyword Research",
-                  "On Page SEO",
-                ],
+                step: "01",
+                title: "Business Research",
+                description:
+                  "Understand your business, competitors, customers, and market opportunities.",
               },
               {
-                icon: MousePointerClick,
-                title: "Paid Advertising",
-                items: [
-                  "Google Ads",
-                  "Meta Ads",
-                  "Remarketing",
-                  "Lead Campaigns",
-                ],
+                step: "02",
+                title: "Marketing Strategy",
+                description:
+                  "Develop a customized digital marketing plan focused on measurable growth.",
               },
               {
-                icon: Instagram,
-                title: "Social Media",
-                items: [
-                  "Content Creation",
-                  "Social Media Management",
-                  "Brand Building",
-                  "Audience Growth",
-                ],
+                step: "03",
+                title: "Campaign Execution",
+                description:
+                  "Launch SEO, Google Ads, content marketing, and social media campaigns.",
               },
               {
-                icon: LineChart,
-                title: "Analytics",
-                items: [
-                  "Performance Reports",
-                  "Conversion Tracking",
-                  "Campaign Analysis",
-                  "Growth Insights",
-                ],
+                step: "04",
+                title: "Optimization",
+                description:
+                  "Track campaign performance and continuously improve results using analytics.",
               },
-            ].map((channel) => {
-              const Icon = channel.icon;
+            ].map((item) => (
 
-              return (
+              <div
+                key={item.step}
+                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition hover:-translate-y-2 hover:bg-white hover:shadow-xl"
+              >
 
-                <div
-                  key={channel.title}
-                  className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition hover:-translate-y-2 hover:shadow-xl"
-                >
-
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100">
-
-                    <Icon className="h-8 w-8 text-orange-500" />
-
-                  </div>
-
-                  <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                    {channel.title}
-                  </h3>
-
-                  <div className="mt-6 space-y-3">
-
-                    {channel.items.map((item) => (
-
-                      <div
-                        key={item}
-                        className="flex items-center gap-3"
-                      >
-
-                        <CheckCircle className="h-5 w-5 text-orange-500" />
-
-                        <span className="text-gray-600">
-                          {item}
-                        </span>
-
-                      </div>
-
-                    ))}
-
-                  </div>
-
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-orange-500 text-xl font-bold text-white">
+                  {item.step}
                 </div>
 
-              );
+                <h3 className="mt-8 text-2xl font-bold text-gray-900">
+                  {item.title}
+                </h3>
 
-            })}
+                <p className="mt-5 leading-8 text-gray-600">
+                  {item.description}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Marketing Solutions */}
+
+      <section className="bg-gray-50 py-24">
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+          <div className="grid items-center gap-16 lg:grid-cols-2">
+
+            <div>
+
+              <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
+                Complete Marketing Solutions
+              </span>
+
+              <h2 className="mt-8 text-4xl font-bold text-gray-900 md:text-5xl">
+                Everything Your Business Needs To Grow Online
+              </h2>
+
+              <p className="mt-8 text-lg leading-8 text-gray-600">
+                We combine search engine optimization, Google Ads,
+                performance marketing, local SEO, content marketing,
+                website optimization, and lead generation into one
+                complete digital marketing strategy.
+              </p>
+
+              <div className="mt-10 space-y-5">
+
+                {[
+                  "Search Engine Optimization",
+                  "Google Ads Management",
+                  "Local SEO",
+                  "Social Media Marketing",
+                  "Performance Marketing",
+                  "Lead Generation",
+                  "Content Marketing",
+                  "Website Optimization",
+                ].map((item) => (
+
+                  <div
+                    key={item}
+                    className="flex items-center gap-4"
+                  >
+
+                    <div className="h-3 w-3 rounded-full bg-orange-500"></div>
+
+                    <span className="text-lg text-gray-700">
+                      {item}
+                    </span>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            </div>
+
+            <div className="rounded-[32px] border border-gray-200 bg-white p-10 shadow-xl">
+
+              <h3 className="text-3xl font-bold text-gray-900">
+                Marketing Performance
+              </h3>
+
+              <div className="mt-10 space-y-8">
+
+                {[
+                  ["Organic Search Growth", "96%"],
+                  ["Lead Conversion", "92%"],
+                  ["Advertising Performance", "95%"],
+                  ["Customer Engagement", "98%"],
+                ].map(([label, value]) => (
+
+                  <div key={label}>
+
+                    <div className="mb-2 flex justify-between">
+
+                      <span className="font-medium text-gray-700">
+                        {label}
+                      </span>
+
+                      <span className="font-bold text-orange-500">
+                        {value}
+                      </span>
+
+                    </div>
+
+                    <div className="h-3 rounded-full bg-orange-100">
+
+                      <div
+                        className="h-3 rounded-full bg-orange-500"
+                        style={{ width: value }}
+                      ></div>
+
+                    </div>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            </div>
 
           </div>
 
@@ -688,7 +607,7 @@ export default function DigitalMarketing() {
 
       {/* Industries */}
 
-      <section className="bg-gray-50 py-24">
+      <section className="bg-white py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
@@ -698,14 +617,14 @@ export default function DigitalMarketing() {
               Industries We Serve
             </span>
 
-            <h2 className="mt-6 text-4xl font-bold text-gray-900">
-              Digital Marketing Solutions For Every Industry
+            <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
+              Digital Marketing Services For Every Industry
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
               Our digital marketing services help businesses improve search
-              visibility, generate qualified leads, increase online sales, and
-              build a strong digital presence across competitive industries.
+              visibility, generate qualified leads, increase online sales,
+              and build a trusted digital presence across multiple industries.
             </p>
 
           </div>
@@ -713,29 +632,25 @@ export default function DigitalMarketing() {
           <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 
             {[
-              [HeartPulse, "Healthcare"],
-              [ShoppingBag, "Electronic Commerce"],
-              [Landmark, "Finance"],
-              [GraduationCap, "Education"],
-              [Building2, "Real Estate"],
-              [Truck, "Logistics"],
-              [Factory, "Manufacturing"],
-              [Globe, "Professional Services"],
-            ].map(([Icon, title], index) => (
+              "Healthcare",
+              "Real Estate",
+              "Education",
+              "Electronic Commerce",
+              "Finance",
+              "Manufacturing",
+              "Professional Services",
+              "Logistics",
+            ].map((industry) => (
 
               <div
-                key={index}
-                className="rounded-3xl border border-gray-200 bg-white p-8 text-center transition hover:-translate-y-2 hover:shadow-xl"
+                key={industry}
+                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 text-center transition hover:-translate-y-2 hover:bg-white hover:shadow-xl"
               >
 
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-orange-100">
-
-                  <Icon className="h-8 w-8 text-orange-500" />
-
-                </div>
+                <div className="mx-auto h-16 w-16 rounded-full bg-orange-500"></div>
 
                 <h3 className="mt-6 text-xl font-bold text-gray-900">
-                  {title}
+                  {industry}
                 </h3>
 
               </div>
@@ -749,7 +664,7 @@ export default function DigitalMarketing() {
       </section>
             {/* FAQ */}
 
-      <section className="bg-white py-24">
+      <section className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
@@ -760,14 +675,13 @@ export default function DigitalMarketing() {
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Digital Marketing FAQ
+              Digital Marketing Questions
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
               Learn more about digital marketing services, search engine
-              optimization, Google Ads management, social media marketing,
-              local SEO, lead generation, and performance marketing from
-              CodeVista Solutions.
+              optimization, Google Ads, local SEO, social media marketing,
+              lead generation, and online business growth.
             </p>
 
           </div>
@@ -778,41 +692,41 @@ export default function DigitalMarketing() {
               {
                 question: "What digital marketing services do you provide?",
                 answer:
-                  "We provide search engine optimization, local SEO, Google Ads management, Meta Ads management, social media marketing, content marketing, email marketing, conversion optimization, online reputation management, and lead generation services.",
+                  "We provide search engine optimization, Google Ads management, local SEO, social media marketing, performance marketing, content marketing, website optimization, and lead generation services.",
               },
               {
                 question: "How long does search engine optimization take?",
                 answer:
-                  "Search engine optimization is a long term strategy. Most businesses begin seeing measurable improvements within three to six months depending on competition, website quality, and industry.",
-              },
-              {
-                question: "Do you manage Google Ads campaigns?",
-                answer:
-                  "Yes. We create, manage, optimize, and monitor Google Ads campaigns focused on generating qualified leads, increasing conversions, and improving return on investment.",
+                  "Most businesses begin seeing measurable improvements within three to six months depending on competition, website quality, and industry.",
               },
               {
                 question: "Can digital marketing help local businesses?",
                 answer:
-                  "Yes. Local SEO, Google Business Profile optimization, paid advertising, and social media marketing help local businesses improve visibility and attract nearby customers.",
+                  "Yes. Local SEO and Google Business Profile optimization help businesses improve local visibility and attract nearby customers.",
               },
               {
-                question: "Do you provide monthly marketing reports?",
+                question: "Do you provide monthly reports?",
                 answer:
-                  "Yes. Every client receives detailed reports covering website traffic, keyword rankings, advertising performance, lead generation, conversions, and campaign improvements.",
+                  "Yes. Every client receives detailed monthly reports covering traffic, keyword rankings, advertising performance, conversions, and marketing improvements.",
               },
               {
-                question: "Which industries do you work with?",
+                question: "Which businesses benefit from digital marketing?",
                 answer:
-                  "We provide digital marketing services for healthcare, education, ecommerce, finance, manufacturing, logistics, real estate, professional services, and many other industries.",
+                  "Healthcare, education, real estate, electronic commerce, finance, manufacturing, logistics, and professional service businesses all benefit from digital marketing.",
+              },
+              {
+                question: "Why choose CodeVista Solutions?",
+                answer:
+                  "Our team focuses on measurable business growth through customized digital marketing strategies, transparent reporting, and continuous optimization.",
               },
             ].map((faq) => (
 
               <div
                 key={faq.question}
-                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition hover:shadow-lg"
+                className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition hover:shadow-xl"
               >
 
-                <h3 className="text-xl font-bold text-gray-900">
+                <h3 className="text-2xl font-bold text-gray-900">
                   {faq.question}
                 </h3>
 
@@ -836,48 +750,44 @@ export default function DigitalMarketing() {
 
         <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600"></div>
 
-        <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-white opacity-10 blur-3xl"></div>
+        <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
 
-        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-white opacity-10 blur-3xl"></div>
+        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
 
           <div className="mx-auto max-w-4xl text-center">
 
             <span className="rounded-full bg-white/20 px-5 py-2 text-sm font-semibold text-white">
-              Grow Your Business With Confidence
+              Ready To Grow Your Business
             </span>
 
             <h2 className="mt-8 text-4xl font-bold text-white md:text-6xl">
-              Digital Marketing Strategies That Generate More Leads And Sales
+              Digital Marketing That Generates More Traffic More Leads And More Sales
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-orange-100">
-              CodeVista Solutions helps businesses grow through search engine
-              optimization, Google Ads management, Meta Ads, local SEO, social
-              media marketing, performance marketing, content marketing,
-              conversion optimization, and lead generation strategies that
-              increase online visibility, attract qualified customers, and
-              deliver measurable business growth.
+              CodeVista Solutions helps businesses improve search rankings,
+              increase online visibility, generate qualified leads, optimize
+              advertising campaigns, strengthen brand awareness, and achieve
+              sustainable business growth through professional digital
+              marketing services.
             </p>
 
             <div className="mt-12 flex flex-wrap justify-center gap-5">
 
               <Link
                 href="/contact"
-                className="inline-flex items-center rounded-xl bg-white px-8 py-4 font-semibold text-orange-600 transition hover:bg-gray-100"
+                className="rounded-xl bg-white px-8 py-4 font-semibold text-orange-600 transition hover:bg-orange-100"
               >
-                Get Free Marketing Consultation
-
-                <ArrowRight className="ml-2 h-5 w-5" />
-
+                Start Your Project
               </Link>
 
               <Link
                 href="/our-services"
-                className="inline-flex items-center rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-orange-600"
+                className="rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-orange-600"
               >
-                Explore More Services
+                Explore Our Services
               </Link>
 
             </div>
