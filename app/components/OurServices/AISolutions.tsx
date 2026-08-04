@@ -1,165 +1,125 @@
 "use client";
 
 import Link from "next/link";
-import {
-  ArrowRight,
-  CheckCircle,
-  Brain,
-  Bot,
-  Cpu,
-  Workflow,
-  Sparkles,
-  Database,
-  ShieldCheck,
-  BarChart3,
-  LineChart,
-  Zap,
-  Cloud,
-  Code2,
-  Users,
-  Building2,
-  HeartPulse,
-  Landmark,
-  ShoppingBag,
-  GraduationCap,
-  Truck,
-  Factory,
-  MessageSquare,
-} from "lucide-react";
 
 const services = [
   {
-    icon: Bot,
+    title: "Artificial Intelligence Development",
+    description:
+      "Develop intelligent AI powered software solutions designed for business automation and digital transformation.",
+  },
+  {
     title: "AI Chatbot Development",
     description:
-      "Develop intelligent AI chatbots that automate customer support, lead generation, and business communication.",
+      "Build intelligent chatbots that improve customer support, lead generation, and business communication.",
   },
   {
-    icon: Brain,
-    title: "Generative AI Solutions",
+    title: "Machine Learning Solutions",
     description:
-      "Build powerful AI applications using advanced language models for content generation, automation, and productivity.",
+      "Create machine learning models that analyze business data and deliver accurate predictions.",
   },
   {
-    icon: Workflow,
-    title: "Business Process Automation",
+    title: "Generative AI Development",
     description:
-      "Automate repetitive workflows with artificial intelligence to improve efficiency and reduce operational costs.",
+      "Develop modern AI applications using advanced language models for business productivity.",
   },
   {
-    icon: Database,
-    title: "AI Data Processing",
+    title: "AI Automation",
     description:
-      "Extract insights from structured and unstructured data using modern artificial intelligence technologies.",
+      "Automate repetitive business processes with intelligent artificial intelligence solutions.",
   },
   {
-    icon: BarChart3,
-    title: "Predictive Analytics",
+    title: "Enterprise AI Solutions",
     description:
-      "Use machine learning models to forecast trends and support data driven business decisions.",
-  },
-  {
-    icon: Cloud,
-    title: "AI Integration",
-    description:
-      "Integrate artificial intelligence into existing web applications, ERP systems, CRM software, and mobile platforms.",
+      "Deploy secure and scalable artificial intelligence solutions for modern enterprises.",
   },
 ];
 
 const benefits = [
   {
-    icon: Zap,
-    title: "Faster Operations",
+    title: "Business Automation",
     description:
-      "Reduce manual work through intelligent automation and AI powered workflows.",
+      "Reduce manual work using intelligent automation powered by artificial intelligence.",
   },
   {
-    icon: ShieldCheck,
-    title: "Secure AI Systems",
+    title: "Better Decisions",
     description:
-      "Enterprise grade security with protected data handling and reliable AI deployment.",
+      "Analyze business data with AI to improve decision making and operational efficiency.",
   },
   {
-    icon: Cpu,
-    title: "Scalable Architecture",
+    title: "Scalable Solutions",
     description:
-      "AI solutions designed to scale as your business and customer base continue to grow.",
+      "Develop AI systems that grow alongside your business requirements.",
   },
   {
-    icon: Sparkles,
-    title: "Modern AI Technology",
+    title: "Higher Productivity",
     description:
-      "Build future ready applications using the latest artificial intelligence frameworks.",
+      "Improve team productivity through intelligent workflows and automation.",
   },
   {
-    icon: Users,
-    title: "Better User Experience",
+    title: "Enterprise Security",
     description:
-      "Deliver personalized experiences using intelligent recommendations and automation.",
+      "Build secure AI solutions with modern security practices and cloud infrastructure.",
   },
   {
-    icon: Code2,
-    title: "Custom Development",
+    title: "Continuous Innovation",
     description:
-      "Every AI solution is designed specifically for your business requirements and goals.",
+      "Stay ahead with modern artificial intelligence technologies and continuous improvements.",
   },
 ];
 
 export default function AISolutions() {
   return (
     <>
+
       {/* Hero */}
 
       <section className="relative overflow-hidden bg-white pt-36 pb-24">
 
         <div className="absolute inset-0 -z-10">
-          <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-orange-100 blur-3xl opacity-40" />
-          <div className="absolute left-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-3xl" />
-          <div className="absolute right-0 top-20 h-72 w-72 rounded-full bg-orange-50 blur-3xl" />
+          <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-orange-100 opacity-40 blur-3xl"></div>
+          <div className="absolute left-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-3xl"></div>
+          <div className="absolute right-0 top-20 h-72 w-72 rounded-full bg-orange-50 blur-3xl"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           <div className="grid items-center gap-16 lg:grid-cols-2">
 
-            {/* Left */}
-
             <div>
 
               <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
-                Artificial Intelligence Solutions
+                Artificial Intelligence Development Company
               </span>
 
               <h1 className="mt-8 text-5xl font-bold tracking-tight text-gray-900 md:text-6xl">
-                AI Solutions That Transform
+                AI Solutions
                 <span className="block text-orange-500">
-                  Modern Businesses
+                  Built For Modern Businesses
                 </span>
               </h1>
 
               <p className="mt-8 text-lg leading-8 text-gray-600">
-                CodeVista Solutions delivers custom AI solutions, artificial
-                intelligence development, AI automation, chatbot development,
-                machine learning solutions, and enterprise AI applications that
-                help businesses increase productivity, reduce costs, and drive
-                digital transformation.
+                CodeVista Solutions delivers professional AI solutions,
+                artificial intelligence development, machine learning,
+                AI automation, AI chatbot development, enterprise AI
+                solutions, and generative AI applications that help
+                businesses automate operations, improve productivity,
+                and accelerate digital transformation.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
 
                 <Link
                   href="/contact"
-                  className="inline-flex items-center rounded-xl bg-orange-500 px-7 py-4 font-semibold text-white transition hover:bg-orange-600"
+                  className="rounded-xl bg-orange-500 px-8 py-4 font-semibold text-white transition hover:bg-orange-600"
                 >
                   Start AI Project
-
-                  <ArrowRight className="ml-2 h-5 w-5" />
-
                 </Link>
 
                 <Link
                   href="/portfolio"
-                  className="inline-flex items-center rounded-xl border border-gray-300 px-7 py-4 font-semibold text-gray-700 transition hover:border-orange-500 hover:text-orange-500"
+                  className="rounded-xl border border-gray-300 px-8 py-4 font-semibold text-gray-700 transition hover:border-orange-500 hover:text-orange-500"
                 >
                   View Portfolio
                 </Link>
@@ -169,7 +129,7 @@ export default function AISolutions() {
               <div className="mt-12 grid gap-4 sm:grid-cols-2">
 
                 {[
-                  "Generative AI",
+                  "Artificial Intelligence",
                   "Machine Learning",
                   "AI Automation",
                   "Enterprise AI",
@@ -180,7 +140,7 @@ export default function AISolutions() {
                     className="flex items-center gap-3"
                   >
 
-                    <CheckCircle className="h-5 w-5 text-orange-500" />
+                    <div className="h-3 w-3 rounded-full bg-orange-500"></div>
 
                     <span className="text-gray-700">
                       {item}
@@ -203,28 +163,28 @@ export default function AISolutions() {
                 <div>
 
                   <h3 className="text-xl font-bold text-gray-900">
-                    AI Analytics
+                    AI Dashboard
                   </h3>
 
                   <p className="text-sm text-gray-500">
-                    Live Intelligence Dashboard
+                    Business Intelligence
                   </p>
 
                 </div>
 
-                <div className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-600">
-                  Active
-                </div>
+                <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700">
+                  Online
+                </span>
 
               </div>
 
               <div className="mt-8 grid grid-cols-2 gap-5">
 
                 {[
-                  ["Automation", "94%"],
+                  ["Automation", "96%"],
                   ["Accuracy", "99%"],
-                  ["Time Saved", "75%"],
-                  ["Growth", "3.8X"],
+                  ["Efficiency", "88%"],
+                  ["Growth", "3.9X"],
                 ].map(([title, value]) => (
 
                   <div
@@ -255,9 +215,9 @@ export default function AISolutions() {
                 <div className="mt-6 space-y-5">
 
                   {[
-                    ["Response Speed", "98%"],
-                    ["Automation Rate", "95%"],
-                    ["Customer Satisfaction", "99%"],
+                    ["Business Automation", "95%"],
+                    ["Prediction Accuracy", "98%"],
+                    ["Customer Satisfaction", "97%"],
                   ].map(([label, value]) => (
 
                     <div key={label}>
@@ -275,7 +235,7 @@ export default function AISolutions() {
                         <div
                           className="h-2 rounded-full bg-orange-500"
                           style={{ width: value }}
-                        />
+                        ></div>
 
                       </div>
 
@@ -294,21 +254,16 @@ export default function AISolutions() {
         </div>
 
       </section>
-            {/* AI Services */}
+            {/* Statistics */}
 
-      <section className="relative overflow-hidden bg-gray-50 py-24">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-orange-100 blur-3xl opacity-40" />
-          <div className="absolute right-0 bottom-20 h-72 w-72 rounded-full bg-orange-50 blur-3xl opacity-50" />
-        </div>
+      <section className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
           <div className="grid gap-6 md:grid-cols-4">
 
             {[
-              ["100+", "AI Projects"],
+              ["150+", "AI Projects"],
               ["99%", "Client Satisfaction"],
               ["24/7", "Technical Support"],
               ["95%", "Automation Accuracy"],
@@ -333,56 +288,60 @@ export default function AISolutions() {
 
           </div>
 
-          <div className="mx-auto mt-24 max-w-3xl text-center">
+        </div>
+
+      </section>
+
+      {/* AI Services */}
+
+      <section className="bg-white py-24">
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+          <div className="mx-auto max-w-3xl text-center">
 
             <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
               AI Development Services
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Complete Artificial Intelligence Development Services
+              Complete Artificial Intelligence Solutions
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              CodeVista Solutions provides custom artificial intelligence
-              development, AI software development, AI chatbot development,
-              machine learning solutions, workflow automation, predictive
-              analytics, and enterprise AI solutions that improve efficiency,
-              customer experience, and business growth.
+              CodeVista Solutions develops intelligent AI software that helps
+              organizations automate operations, improve decision making,
+              increase productivity, reduce operational costs, and deliver
+              better customer experiences through modern artificial
+              intelligence technologies.
             </p>
 
           </div>
 
           <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-            {services.map((service) => {
-              const Icon = service.icon;
+            {services.map((service) => (
 
-              return (
+              <div
+                key={service.title}
+                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:bg-white hover:shadow-xl"
+              >
 
-                <div
-                  key={service.title}
-                  className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
-                >
-
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100 transition group-hover:bg-orange-500">
-
-                    <Icon className="h-8 w-8 text-orange-500 group-hover:text-white" />
-
-                  </div>
-
-                  <h3 className="mt-8 text-2xl font-bold text-gray-900">
-                    {service.title}
-                  </h3>
-
-                  <p className="mt-4 leading-7 text-gray-600">
-                    {service.description}
-                  </p>
-
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500 text-lg font-bold text-white">
+                  AI
                 </div>
 
-              );
-            })}
+                <h3 className="mt-8 text-2xl font-bold text-gray-900">
+                  {service.title}
+                </h3>
+
+                <p className="mt-5 leading-8 text-gray-600">
+                  {service.description}
+                </p>
+
+              </div>
+
+            ))}
 
           </div>
 
@@ -392,7 +351,7 @@ export default function AISolutions() {
 
       {/* Why Choose CodeVista */}
 
-      <section className="bg-white py-24">
+      <section className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
@@ -407,61 +366,55 @@ export default function AISolutions() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Our AI engineers build intelligent software that combines
-              automation, analytics, machine learning, and generative AI to
-              create secure, scalable, and business focused solutions for
-              organizations of every size.
+              Our team develops scalable AI solutions using modern machine
+              learning, natural language processing, intelligent automation,
+              and enterprise software architecture to help businesses achieve
+              long term digital transformation.
             </p>
 
           </div>
 
           <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-            {benefits.map((benefit) => {
-              const Icon = benefit.icon;
+            {benefits.map((benefit) => (
 
-              return (
+              <div
+                key={benefit.title}
+                className="rounded-3xl border border-gray-200 bg-white p-8 transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
+              >
 
-                <div
-                  key={benefit.title}
-                  className="group rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
-                >
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-100">
 
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100 transition group-hover:bg-orange-500">
-
-                    <Icon className="h-8 w-8 text-orange-500 group-hover:text-white" />
-
-                  </div>
-
-                  <h3 className="mt-8 text-2xl font-bold text-gray-900">
-                    {benefit.title}
-                  </h3>
-
-                  <p className="mt-4 leading-7 text-gray-600">
-                    {benefit.description}
-                  </p>
+                  <div className="h-4 w-4 rounded-full bg-orange-500"></div>
 
                 </div>
 
-              );
-            })}
+                <h3 className="mt-8 text-2xl font-bold text-gray-900">
+                  {benefit.title}
+                </h3>
+
+                <p className="mt-5 leading-8 text-gray-600">
+                  {benefit.description}
+                </p>
+
+              </div>
+
+            ))}
 
           </div>
 
-          <div className="mt-20 rounded-[32px] bg-gradient-to-r from-orange-500 to-orange-600 p-10 text-center text-white shadow-2xl">
+          <div className="mt-20 rounded-[32px] bg-gradient-to-r from-orange-500 to-orange-600 p-12 text-center text-white">
 
-            <Brain className="mx-auto h-14 w-14" />
-
-            <h3 className="mt-6 text-3xl font-bold">
+            <h3 className="text-3xl font-bold md:text-4xl">
               Build Intelligent Software With Artificial Intelligence
             </h3>
 
-            <p className="mx-auto mt-5 max-w-3xl text-lg text-orange-100">
-              From AI powered chatbots and workflow automation to predictive
-              analytics and enterprise AI platforms, CodeVista Solutions creates
-              custom artificial intelligence solutions that help businesses work
-              smarter, increase productivity, and accelerate digital
-              transformation.
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-orange-100">
+              From AI chatbot development and machine learning solutions to
+              enterprise AI platforms, intelligent automation, predictive
+              analytics, and generative AI applications, CodeVista Solutions
+              creates custom AI software designed for measurable business
+              growth and long term success.
             </p>
 
           </div>
@@ -469,14 +422,9 @@ export default function AISolutions() {
         </div>
 
       </section>
-            {/* AI Development Process */}
+            {/* Development Process */}
 
-      <section className="relative overflow-hidden bg-gray-50 py-24">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-orange-100 blur-3xl opacity-40" />
-          <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-3xl opacity-50" />
-        </div>
+      <section className="bg-white py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
@@ -487,67 +435,61 @@ export default function AISolutions() {
             </span>
 
             <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              From Business Challenge To Intelligent AI Solution
+              Simple Process For Powerful AI Solutions
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Every artificial intelligence solution follows a structured
-              development process that delivers secure, scalable, accurate, and
-              business focused results.
+              Every artificial intelligence project follows a structured
+              development process that focuses on business value, automation,
+              scalability, security, and long term success.
             </p>
 
           </div>
 
-          <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
 
             {[
-              [
-                "01",
-                "Business Discovery",
-                "Understand your business goals, existing workflows, and automation opportunities."
-              ],
-              [
-                "02",
-                "AI Strategy",
-                "Select the best AI models, architecture, integrations, and implementation roadmap."
-              ],
-              [
-                "03",
-                "Data Preparation",
-                "Organize, clean, and structure business data for intelligent AI processing."
-              ],
-              [
-                "04",
-                "AI Development",
-                "Build custom AI software, chatbots, machine learning models, and automation systems."
-              ],
-              [
-                "05",
-                "Testing",
-                "Validate accuracy, performance, security, scalability, and business reliability."
-              ],
-              [
-                "06",
-                "Deployment",
-                "Deploy AI solutions with monitoring, optimization, and continuous improvements."
-              ],
-            ].map(([step, title, description]) => (
+              {
+                step: "01",
+                title: "Business Discovery",
+                description:
+                  "Understand business goals, workflows, challenges, and automation opportunities.",
+              },
+              {
+                step: "02",
+                title: "AI Strategy",
+                description:
+                  "Create an artificial intelligence roadmap based on business requirements and growth objectives.",
+              },
+              {
+                step: "03",
+                title: "Development",
+                description:
+                  "Build secure AI applications using modern machine learning and automation technologies.",
+              },
+              {
+                step: "04",
+                title: "Deployment",
+                description:
+                  "Deploy, monitor, optimize, and continuously improve AI performance.",
+              },
+            ].map((item) => (
 
               <div
-                key={step}
-                className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+                key={item.step}
+                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition hover:-translate-y-2 hover:bg-white hover:shadow-xl"
               >
 
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-orange-500 text-xl font-bold text-white">
-                  {step}
+                  {item.step}
                 </div>
 
-                <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                  {title}
+                <h3 className="mt-8 text-2xl font-bold text-gray-900">
+                  {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">
-                  {description}
+                <p className="mt-5 leading-8 text-gray-600">
+                  {item.description}
                 </p>
 
               </div>
@@ -560,118 +502,109 @@ export default function AISolutions() {
 
       </section>
 
-      {/* AI Technology Stack */}
+      {/* AI Technologies */}
 
-      <section className="bg-white py-24">
+      <section className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="grid items-center gap-16 lg:grid-cols-2">
 
-            <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
-              AI Technology Stack
-            </span>
+            <div>
 
-            <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
-              Modern AI Technologies For Enterprise Applications
-            </h2>
+              <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-semibold text-orange-600">
+                AI Technologies
+              </span>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We build artificial intelligence applications using modern
-              frameworks, cloud infrastructure, machine learning models,
-              language models, and secure deployment technologies.
-            </p>
+              <h2 className="mt-8 text-4xl font-bold text-gray-900 md:text-5xl">
+                Modern Technologies For Intelligent Applications
+              </h2>
 
-          </div>
+              <p className="mt-8 text-lg leading-8 text-gray-600">
+                CodeVista Solutions develops AI software using modern
+                artificial intelligence frameworks, cloud infrastructure,
+                intelligent automation, predictive analytics, and enterprise
+                technologies that deliver secure and scalable business
+                solutions.
+              </p>
 
-          <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+              <div className="mt-10 space-y-5">
 
-            {[
-              {
-                icon: Brain,
-                title: "Artificial Intelligence",
-                items: [
-                  "OpenAI",
-                  "Claude",
-                  "Gemini",
-                  "Llama",
-                ],
-              },
-              {
-                icon: Cpu,
-                title: "Development",
-                items: [
-                  "Python",
-                  "FastAPI",
-                  "Node.js",
-                  "Next.js",
-                ],
-              },
-              {
-                icon: Database,
-                title: "Data",
-                items: [
-                  "PostgreSQL",
-                  "MongoDB",
-                  "Vector Database",
-                  "Redis",
-                ],
-              },
-              {
-                icon: Cloud,
-                title: "Cloud",
-                items: [
-                  "AWS",
-                  "Docker",
-                  "Cloudflare",
-                  "Vercel",
-                ],
-              },
-            ].map((stack) => {
-              const Icon = stack.icon;
+                {[
+                  "Artificial Intelligence Development",
+                  "Machine Learning",
+                  "Natural Language Processing",
+                  "Generative AI",
+                  "Predictive Analytics",
+                  "Business Automation",
+                  "Cloud AI Solutions",
+                  "Enterprise AI Applications",
+                ].map((item) => (
 
-              return (
+                  <div
+                    key={item}
+                    className="flex items-center gap-4"
+                  >
 
-                <div
-                  key={stack.title}
-                  className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition hover:-translate-y-2 hover:shadow-xl"
-                >
+                    <div className="h-3 w-3 rounded-full bg-orange-500"></div>
 
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100">
-
-                    <Icon className="h-8 w-8 text-orange-500" />
+                    <span className="text-lg text-gray-700">
+                      {item}
+                    </span>
 
                   </div>
 
-                  <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                    {stack.title}
-                  </h3>
+                ))}
 
-                  <div className="mt-6 space-y-3">
+              </div>
 
-                    {stack.items.map((item) => (
+            </div>
+
+            <div className="rounded-[32px] border border-gray-200 bg-white p-10 shadow-xl">
+
+              <h3 className="text-3xl font-bold text-gray-900">
+                AI Performance
+              </h3>
+
+              <div className="mt-10 space-y-8">
+
+                {[
+                  ["Automation Efficiency", "97%"],
+                  ["Prediction Accuracy", "99%"],
+                  ["Business Productivity", "95%"],
+                  ["Customer Satisfaction", "98%"],
+                ].map(([label, value]) => (
+
+                  <div key={label}>
+
+                    <div className="mb-2 flex justify-between">
+
+                      <span className="font-medium text-gray-700">
+                        {label}
+                      </span>
+
+                      <span className="font-bold text-orange-500">
+                        {value}
+                      </span>
+
+                    </div>
+
+                    <div className="h-3 rounded-full bg-orange-100">
 
                       <div
-                        key={item}
-                        className="flex items-center gap-3"
-                      >
+                        className="h-3 rounded-full bg-orange-500"
+                        style={{ width: value }}
+                      ></div>
 
-                        <CheckCircle className="h-5 w-5 text-orange-500" />
-
-                        <span className="text-gray-600">
-                          {item}
-                        </span>
-
-                      </div>
-
-                    ))}
+                    </div>
 
                   </div>
 
-                </div>
+                ))}
 
-              );
-            })}
+              </div>
+
+            </div>
 
           </div>
 
@@ -681,7 +614,7 @@ export default function AISolutions() {
 
       {/* Industries */}
 
-      <section className="bg-gray-50 py-24">
+      <section className="bg-white py-24">
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
@@ -691,45 +624,40 @@ export default function AISolutions() {
               Industries We Serve
             </span>
 
-            <h2 className="mt-6 text-4xl font-bold text-gray-900">
+            <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
               AI Solutions For Every Industry
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-              Our artificial intelligence solutions help organizations automate
-              operations, improve decision making, increase productivity, and
-              deliver exceptional customer experiences across multiple
-              industries.
+              Our artificial intelligence development services help businesses
+              automate operations, improve customer experiences, reduce costs,
+              and accelerate digital transformation across multiple industries.
             </p>
 
           </div>
 
-          <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
 
             {[
-              [HeartPulse, "Healthcare"],
-              [Landmark, "Finance"],
-              [ShoppingBag, "Electronic Commerce"],
-              [GraduationCap, "Education"],
-              [Truck, "Logistics"],
-              [Factory, "Manufacturing"],
-              [Building2, "Real Estate"],
-              [MessageSquare, "Customer Support"],
-            ].map(([Icon, title], index) => (
+              "Healthcare",
+              "Finance",
+              "Education",
+              "Electronic Commerce",
+              "Manufacturing",
+              "Real Estate",
+              "Logistics",
+              "Professional Services",
+            ].map((industry) => (
 
               <div
-                key={index}
-                className="rounded-3xl border border-gray-200 bg-white p-8 text-center transition hover:-translate-y-2 hover:shadow-xl"
+                key={industry}
+                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 text-center transition hover:-translate-y-2 hover:bg-white hover:shadow-xl"
               >
 
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-orange-100">
+                <div className="mx-auto h-16 w-16 rounded-full bg-orange-500"></div>
 
-                  <Icon className="h-8 w-8 text-orange-500" />
-
-                </div>
-
-                <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                  {title}
+                <h3 className="mt-6 text-xl font-bold text-gray-900">
+                  {industry}
                 </h3>
 
               </div>
@@ -743,7 +671,7 @@ export default function AISolutions() {
       </section>
             {/* FAQ */}
 
-      <section className="bg-white py-24">
+      <section className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
@@ -758,10 +686,9 @@ export default function AISolutions() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-              Learn more about custom AI development, machine learning,
-              enterprise AI solutions, AI chatbot development, business
-              automation, implementation timelines, and ongoing support from
-              CodeVista Solutions.
+              Learn more about AI development, machine learning, enterprise AI,
+              business automation, AI chatbots, implementation timelines, and
+              ongoing support from CodeVista Solutions.
             </p>
 
           </div>
@@ -772,41 +699,41 @@ export default function AISolutions() {
               {
                 question: "What are AI solutions?",
                 answer:
-                  "AI solutions use artificial intelligence technologies to automate business processes, analyze data, improve decision making, enhance customer experiences, and increase operational efficiency.",
+                  "AI solutions use artificial intelligence technologies to automate business processes, analyze information, improve decision making, increase productivity, and deliver better customer experiences.",
               },
               {
-                question: "Can artificial intelligence be integrated into existing software?",
+                question: "Can AI be integrated into existing software?",
                 answer:
-                  "Yes. We integrate AI into existing websites, mobile applications, CRM platforms, ERP systems, SaaS products, and enterprise software without disrupting existing operations.",
+                  "Yes. We integrate artificial intelligence into websites, business software, CRM platforms, ERP systems, cloud applications, and enterprise software.",
               },
               {
-                question: "Which industries benefit from AI development?",
+                question: "Do you build AI chatbots?",
                 answer:
-                  "Healthcare, finance, education, logistics, ecommerce, manufacturing, customer service, real estate, and many other industries benefit from intelligent automation and data driven insights.",
+                  "Yes. We develop intelligent AI chatbots for customer support, sales, lead generation, internal business operations, and knowledge management.",
               },
               {
-                question: "Do you build custom AI chatbots?",
+                question: "How long does AI development take?",
                 answer:
-                  "Yes. We develop intelligent AI chatbots for customer support, lead generation, internal knowledge systems, employee assistance, and automated communication.",
+                  "The timeline depends on project scope, business requirements, integrations, and data availability. Smaller projects may take several weeks while enterprise platforms require larger implementation phases.",
               },
               {
-                question: "How long does an AI development project take?",
+                question: "Which industries benefit from artificial intelligence?",
                 answer:
-                  "Project timelines depend on complexity, available data, integrations, and business goals. Smaller AI solutions can be delivered within weeks while enterprise platforms require larger implementation phases.",
+                  "Healthcare, finance, education, manufacturing, logistics, real estate, electronic commerce, and professional services benefit from artificial intelligence solutions.",
               },
               {
-                question: "Do you provide support after deployment?",
+                question: "Do you provide maintenance and support?",
                 answer:
-                  "Yes. We provide monitoring, maintenance, optimization, feature enhancements, model improvements, and long term technical support after deployment.",
+                  "Yes. We provide continuous maintenance, monitoring, optimization, security updates, model improvements, and technical support after deployment.",
               },
             ].map((faq) => (
 
               <div
                 key={faq.question}
-                className="rounded-3xl border border-gray-200 bg-gray-50 p-8 transition hover:shadow-lg"
+                className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition hover:shadow-xl"
               >
 
-                <h3 className="text-xl font-bold text-gray-900">
+                <h3 className="text-2xl font-bold text-gray-900">
                   {faq.question}
                 </h3>
 
@@ -830,16 +757,16 @@ export default function AISolutions() {
 
         <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600"></div>
 
-        <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-white opacity-10 blur-3xl"></div>
+        <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
 
-        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-white opacity-10 blur-3xl"></div>
+        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
 
           <div className="mx-auto max-w-4xl text-center">
 
             <span className="rounded-full bg-white/20 px-5 py-2 text-sm font-semibold text-white">
-              Build Intelligent Business Solutions
+              Build Smarter Business Solutions
             </span>
 
             <h2 className="mt-8 text-4xl font-bold text-white md:text-6xl">
@@ -847,11 +774,11 @@ export default function AISolutions() {
             </h2>
 
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-orange-100">
-              CodeVista Solutions develops custom artificial intelligence
-              solutions, AI automation platforms, machine learning systems,
-              intelligent chatbots, predictive analytics, enterprise AI
-              applications, and business automation software that improve
-              productivity, reduce operational costs, and accelerate digital
+              CodeVista Solutions delivers artificial intelligence development,
+              machine learning solutions, AI chatbot development, business
+              automation, enterprise AI platforms, predictive analytics,
+              intelligent software, and custom AI applications that improve
+              efficiency, reduce operational costs, and accelerate digital
               transformation.
             </p>
 
@@ -859,19 +786,16 @@ export default function AISolutions() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center rounded-xl bg-white px-8 py-4 font-semibold text-orange-600 transition hover:bg-gray-100"
+                className="rounded-xl bg-white px-8 py-4 font-semibold text-orange-600 transition hover:bg-orange-100"
               >
                 Start Your AI Project
-
-                <ArrowRight className="ml-2 h-5 w-5" />
-
               </Link>
 
               <Link
                 href="/our-services"
-                className="inline-flex items-center rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-orange-600"
+                className="rounded-xl border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-orange-600"
               >
-                Explore More Services
+                Explore Our Services
               </Link>
 
             </div>
